@@ -11,7 +11,8 @@ html {
   margin-bottom: 2rem; }
 
 h1 {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  line-height: 1.5em; }
 
 hr {
   border: 0;
@@ -67,6 +68,49 @@ hr {
   border-color: #B12A0B; }
 
 .textbox ~ p.error {
+  color: #B12A0B;
+  margin: 1rem 20px 0;
+  font-size: 0.75rem;
+  line-height: 1.5em; }
+
+.textarea {
+  background: #fff;
+  border: 1px solid #595959;
+  border-radius: 3px;
+  padding: 20px 20px;
+  color: #595959;
+  font-size: 1rem;
+  line-height: 1.5em;
+  width: 100%;
+  min-height: 140px;
+  height: auto;
+  box-sizing: border-box;
+  vertical-align: top; }
+  .textarea ~ label {
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    background: #fff;
+    margin-left: 10px;
+    padding: 0 10px; }
+  .textarea--valid {
+    border-color: #029146; }
+  .textarea--error {
+    border-color: #B12A0B; }
+  .textareap .error {
+    color: #B12A0B;
+    margin: 1rem 20px 0;
+    font-size: 0.75rem;
+    line-height: 1.5em; }
+  .textarea:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    height: 5px; }
+
+.textarea ~ p.error {
   color: #B12A0B;
   margin: 1rem 20px 0;
   font-size: 0.75rem;
