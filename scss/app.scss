@@ -13,6 +13,8 @@ $color: (
     brick: #B12A0B
 );
 
+$offscreen: -9999rem;
+
 html {
     font-size: $typography-base;
     font-family: $font-nunito;
@@ -32,10 +34,11 @@ h1 {
 
 hr {
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid map-get($color, dark-gray);
     margin: 1em 0;
 }
 
 @import 'label';
 @import 'input';
 @import 'textarea';
+@import 'checkbox';
