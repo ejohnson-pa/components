@@ -1,0 +1,27 @@
+.label {
+    display: inline-block;
+    font-size: 0.75rem;
+    line-height: 1.5em;
+    max-width: 80%;
+    text-align: left;
+}
+
+.label::before {
+    display: table;
+    content: "";
+    margin-top: -0.18em;
+}
+
+.label::after {
+    display: table;
+    content: "";
+    margin-bottom: -0.12em;
+}
+
+.label--valid {
+    color: map-get($color, green);
+}
+
+.label--error {
+    color: map-get($color, brick);
+}
