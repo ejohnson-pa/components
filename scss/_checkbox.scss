@@ -24,6 +24,8 @@
 
         &:checked {
             &+label {
+                color: map-get($color, 'brand-green');
+                font-weight: 600;
                 &::before {
                     background-color: rgba(0, 138, 52, 0.15);                    
                 }
