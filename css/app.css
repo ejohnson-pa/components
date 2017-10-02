@@ -9,7 +9,7 @@ html {
   line-height: 1.5em;
   color: #595959; }
 
-.field {
+.fieldset {
   position: relative;
   margin-bottom: 2rem; }
 
@@ -27,7 +27,8 @@ hr {
   font-size: 0.75rem;
   line-height: 1.5em;
   max-width: 80%;
-  text-align: left; }
+  text-align: left;
+  background-color: #fff; }
 
 .label::before {
   display: table;
