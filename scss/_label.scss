@@ -19,9 +19,9 @@
 }
 
 .label--valid {
-    color: map-get($color, green);
+    color: map-get($color, 'green');
 }
 
 .label--error {
-    color: map-get($color, brick);
+    color: map-get($color, 'brick');
 }

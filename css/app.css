@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:500");
+/**
+TODO: AP get clarity on greens 
+**/
 html {
   font-size: 16px;
   font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
@@ -16,8 +19,8 @@ h1 {
 
 hr {
   border: 0;
-  border-top: 1px solid #595959;
-  margin: 1em 0; }
+  border-top: 1px solid #595959 z;
+  margin: 2em 0; }
 
 .label {
   display: inline-block;
@@ -46,12 +49,10 @@ hr {
   position: absolute;
   top: -0.5em;
   left: 0;
-  background: #fff;
   margin-left: 10px;
   padding: 0 10px; }
 
 .textbox {
-  background: #fff;
   border: 1px solid #595959;
   border-radius: 3px;
   padding: 19px 20px;
@@ -60,9 +61,6 @@ hr {
   width: 100%;
   height: 60px;
   box-sizing: border-box; }
-
-.textbox--valid {
-  border-color: #029146; }
 
 .textbox--error {
   border-color: #B12A0B; }
@@ -213,3 +211,76 @@ hr {
       left: 6px;
       border-radius: 9px;
       background: #008A34; }
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(2, 145, 70, 0.05);
+  border-radius: 3px;
+  border: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  .button:hover {
+    background-color: rgba(2, 145, 70, 0.15); }
+  .button:active button {
+    padding: 0 30px;
+    line-height: 40px;
+    margin: 10px; }
+  .button button {
+    cursor: pointer;
+    display: block;
+    border: 0;
+    margin: 0;
+    background-color: #008A34;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 60px;
+    padding: 0 40px;
+    border-radius: 3px;
+    min-width: 100px;
+    width: auto;
+    -webkit-transition: all 0.05s ease-out;
+    -moz-transition: all 0.05s ease-out;
+    -o-transition: all 0.05s ease-out;
+    transition: all 0.05s ease-out;
+    /* TODO - onRelease()
+        line-height: 70px;
+        margin: 5px;
+        padding: 0 45px;
+        */ }
+  .button--destructive {
+    background-color: rgba(177, 42, 11, 0.05); }
+    .button--destructive:hover {
+      background-color: rgba(177, 42, 11, 0.15); }
+    .button--destructive button {
+      background-color: #B12A0B; }
+  .button--text-only {
+    background: transparent;
+    margin: 0;
+    padding: 5px 10px 5px; }
+    .button--text-only button {
+      padding: 0;
+      background: transparent;
+      font-size: 1rem;
+      color: #0192D0;
+      padding: 0;
+      line-height: 1rem; }
+    .button--text-only:hover {
+      background-color: transparent; }
+    .button--text-only:active button {
+      padding: 0;
+      line-height: 60px;
+      margin: 0; }
+
+.button-group {
+  display: block;
+  width: auto; }
+  .button-group--stack-vertical .button {
+    margin: 0 auto;
+    display: table;
+    margin-bottom: 20px; }

@@ -27,7 +27,7 @@
                 color: map-get($color, 'brand-green');
                 font-weight: 600;
                 &::before {
-                    background-color: rgba(0, 138, 52, 0.15);                    
+                    background-color: rgba(0, 138, 52, 0.15); // TODO - Refactor to include color in gobals      
                 }
                 &::after {
                     content: "";
@@ -39,7 +39,7 @@
         &:focus {
             &+label {
                 &::before {
-                    outline: rgb(59, 153, 252) auto 5px;
+                    outline: rgb(59, 153, 252) auto 5px; // TODO - Refactor to include color in gobals
                 }
             }
         }        
@@ -61,7 +61,7 @@
             width: 28px;
             height: 28px;
             background: transparent;
-            border: 1px solid map-get($color, dark-gray);   
+            border: 1px solid map-get($color, 'dark-gray');   
             border-radius: 3px;
             margin-right: 20px;
             left: 0;
@@ -73,7 +73,7 @@
             height: 6px;
             top: 8px;
             left: 5px;
-            border: 5px solid #008A34;
+            border: 5px solid map-get($color, 'brand-green');
             border-top: none;
             border-right: none;
             background: transparent;

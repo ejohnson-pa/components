@@ -1,10 +1,10 @@
 .textarea {
     
-    background: map-get($color, white);
-    border: 1px solid map-get($color, dark-gray);
+    background: map-get($color, 'white');
+    border: 1px solid map-get($color, 'dark-gray');
     border-radius: 3px;
     padding: 20px 20px;
-    color: map-get($color, dark-gray);
+    color: map-get($color, 'dark-gray');
     font-size: 1rem;
     line-height: 1.5em;
     width: 100%;
@@ -17,22 +17,22 @@
         position: absolute;
         top: -0.5em;
         left: 0;
-        background: map-get($color, white);
+        background: map-get($color, 'white');
         margin-left: 10px;
         padding: 0 10px;                    
     }
     
     &--valid {
-        border-color: map-get($color, green); 
+        border-color: map-get($color, 'green'); 
     }
 
     &--error {
-        border-color: map-get($color, brick); 
+        border-color: map-get($color, 'brick'); 
     }
 
     &p {
         .error {
-            color: map-get($color, brick); 
+            color: map-get($color, 'brick'); 
             margin: 1rem 20px 0;
             font-size: 0.75rem;
             line-height: 1.5em;
@@ -50,7 +50,7 @@
 }
 
 .textarea ~ p.error {
-    color: map-get($color, brick); 
+    color: map-get($color, 'brick'); 
     margin: 1rem 20px 0;
     font-size: 0.75rem;
     line-height: 1.5em;

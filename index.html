@@ -12,34 +12,34 @@
         <h1>UI Pattern Library | Private Acre</h1>
 
         <a href="#textboxes">Textboxes</a> | <a href="#textareas">Textareas</a> | <a href="#checkboxes">Checkboxes</a> | 
-        <a href="#radiobuttons">Radio Buttons</a>
+        <a href="#radiobuttons">Radio Buttons</a> | <a href="#buttons">Buttons</a>
 
         <hr>
 
         <section id="textboxes">
             <h2>Textboxes</h2>
             
-            <div class="field">
+            <div class="fieldset">
                 <input type="text" name="input-1" id="input-1" class="textbox">
                 <label for="input-1" class="label">Blank textbox</label>
             </div>
             
-            <div class="field">
+            <div class="fieldset">
                 <input type="text" name="input-2" id="input-2" class="textbox" placeholder="Placeholder example">
                 <label for="input-2" class="label">Textbox with placeholder</label>
             </div>
 
-            <div class="field">
+            <div class="fieldset">
                 <input type="text" name="input-3" id="input-3" class="textbox" value="User entered input text here.">
                 <label for="input-3" class="label">Textbox with user input</label>
             </div>
             
-            <div class="field">
+            <div class="fieldset">
                 <input type="text" name="input-4" id="input-4" class="textbox textbox--valid" value="Valid input text.">
                 <label for="input-4" class="label label--valid">Textbox in valid state</label>
             </div>
             
-            <div class="field">
+            <div class="fieldset">
                 <input type="text" name="input-5" id="input-5" class="textbox textbox--error" value="Valid input text.">
                 <label for="input-5" class="label label--error">Textbox in invalid state</label>
                 <p class="error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
@@ -51,22 +51,22 @@
         <section id="textareas">
             <h2>Textareas</h2>
             
-            <div class="field">
+            <div class="fieldset">
                 <textarea type="text" name="textarea-1" id="textarea-1" class="textarea"></textarea>
                 <label for="textarea-1" class="label">Blank textarea</label>
             </div>
 
-            <div class="field">
+            <div class="fieldset">
                 <textarea type="text" name="textarea-2" id="textarea-2" class="textarea">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
                 <label for="textarea-2" class="label">Textarea with user input</label>
             </div>
 
-            <div class="field">
+            <div class="fieldset">
                 <textarea type="text" name="textarea-3" id="textarea-3" class="textarea textarea--valid">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
                 <label for="textarea-3" class="label label--valid">Textarea in valid state</label>
             </div>
 
-            <div class="field">
+            <div class="fieldset">
                 <textarea type="text" name="textarea-4" id="textarea-4" class="textarea textarea--error">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
                 <label for="textarea-4" class="label label--error">Textarea in invalid state</label>
                 <p class="error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
@@ -78,7 +78,7 @@
         <section id="checkboxes">
             <h2>Checkboxes</h2>
     
-            <div class="field">
+            <div class="fieldset">
                 <div class="checkbox">
                     <input type="checkbox" name="checkbox-1" id="checkbox-1">
                     <label for="checkbox-1">Checkbox Option 1</label>
@@ -99,7 +99,7 @@
         <section id="radiobuttons">
             <h2>Radio Buttons</h2>
     
-            <div class="field">
+            <div class="fieldset">
                 <div class="radiobutton">
                     <input type="radio" name="radiobutton" id="radiobutton-1">
                     <label for="radiobutton-1">Radio Button 1</label>
@@ -114,6 +114,79 @@
                 </div>
             </div>
         </section>
+
+        <hr>
+
+        <section id="buttons">
+            <h2>Buttons</h2>
+    
+            <div class="fieldset">
+                <h3>Progressive Button</h3>
+                <div class="button">
+                    <button name="button1" id="button1">
+                        Do Awesome Stuff
+                    </button>
+                </div>
+                <h3>Destructive Button</h3>
+                <div class="button button--destructive">
+                    <button name="button2" id="button2">
+                        Delete
+                    </button>
+                </div>
+                <h3>Text-Only Button</h3>
+                <div class="button button--text-only">
+                    <button name="button3" id="button3">
+                        Do Stuff That’s Fine But Less Preferred
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="button-groups">
+            <h2>Button Groups</h2>
+    
+            <div class="fieldset button-group button-group--stack-vertical">
+                <h3>Double Affirmative</h3>
+                <div class="button">
+                    <button name="button4" id="button4">
+                        Do Awesome Stuff
+                    </button>
+                </div>
+                <div class="button">
+                    <button name="button5" id="button5">
+                        Do Other Awesome Stuff
+                    </button>
+                </div>
+            </div>
+
+            <div class="fieldset button-group button-group--stack-vertical">
+                <h3>Mixed Intent</h3>
+                <div class="button">
+                    <button name="button6" id="button6">
+                        Do Awesome Stuff
+                    </button>
+                </div>
+                <div class="button button--destructive">
+                    <button name="button7" id="button7">
+                        Delete Stuff
+                    </button>
+                </div>
+            </div>
+
+            <div class="fieldset button-group button-group--stack-vertical">
+                    <h3>Preferred + Fallback Non-Destructive</h3>
+                    <div class="button">
+                        <button name="button8" id="button8">
+                            Do Awesome Stuff
+                        </button>
+                    </div>
+                    <div class="button button--text-only">
+                        <button name="button9" id="button9">
+                            Do Stuff That’s Fine But Less Preferred
+                        </button>
+                    </div>
+                </div>
+            </section>
 
     </body>
 </html>

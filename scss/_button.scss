@@ -1,0 +1,103 @@
+.button {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(2, 145, 70, 0.05); // TODO - Refactor to use color map
+    border-radius: 3px;
+    border: 0;
+    -webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+         -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+
+    &:hover {
+        background-color: rgba(2, 145, 70, 0.15);
+    }
+
+    &:active {
+        button {
+            padding: 0 30px;
+            line-height: 40px;
+            margin: 10px;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        display: block;
+        border: 0;
+        margin: 0;
+        background-color: map-get($color, 'brand-green');;
+        color: map-get($color, 'white');
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 60px;
+        padding: 0 40px;
+        border-radius: 3px;
+        min-width: 100px;
+        width: auto;
+        -webkit-transition: all 0.05s ease-out;
+           -moz-transition: all 0.05s ease-out;
+             -o-transition: all 0.05s ease-out;
+                transition: all 0.05s ease-out;
+
+        /* TODO - onRelease()
+        line-height: 70px;
+        margin: 5px;
+        padding: 0 45px;
+        */        
+    }
+
+    // Destructive Variant
+    &--destructive {
+        background-color: rgba(177, 42, 11, 0.05); // TODO - Refactor to use color map
+        
+        &:hover {
+            background-color: rgba(177, 42, 11, 0.15); // TODO - Refactor to use color map
+        }
+
+        button {
+            background-color: map-get($color, 'brick');
+        }
+    }
+
+    // Text Only Variant
+    &--text-only {
+        background: transparent;
+        margin: 0;
+        padding: 5px 10px 5px;
+        button {
+            padding: 0;
+            background: transparent;
+            font-size: 1rem;
+            color: map-get($color, 'blue');
+            padding: 0;
+            line-height: 1rem;
+        }
+        &:hover {
+            background-color: transparent; // TODO - Refactor to use color map
+        }
+        &:active {
+            button {
+                padding: 0;
+                line-height: 60px;
+                margin: 0;
+            }                
+        }
+    }
+
+ }
+
+ .button-group {
+    display: block;
+    width: auto; 
+
+    &--stack-vertical {
+        .button {
+            margin: 0 auto;   
+            display: table;
+            margin-bottom: 20px;
+        }
+    }
+}
