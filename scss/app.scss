@@ -1,51 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:500');
-
-$font-nunito: 'Nunito Sans', Arial, Helvetica, sans-serif;
-$font-raleway: 'Raleway', Arial, Helvetica, sans-serif;
-
-$typography-base: 16px;
-
-/**
-TODO: AP get clarity on greens 
-**/
-$color: (
-    'white': #fff,
-    'dark-gray': #595959,
-    'green': #029146, /* validation green TODO - Is this different from brand green? */
-    'brand-green': #008A34, 
-    'brick': #B12A0B,
-    'blue': #0192D0
-);
+@import 'color';
+@import 'typography';
 
 $offscreen: -9999rem;
 
 html {
+    color: map-get($color, 'dark-gray');
     font-size: $typography-base;
     font-family: $font-nunito;
     line-height: 1.5em;
-    color: map-get($color, 'dark-gray');
 }
 
-.fieldset {
-    position: relative;
+.pa-fieldset {
     margin-bottom: 2rem;
-}
-
-h1 {
-    margin-bottom: 1em;
-    line-height: 1.5em
+    position: relative;
 }
 
 hr {
     border: 0;
-    border-top: 1px solid map-get($color, 'dark-gray')z;
+    border-top: 1px solid map-get($color, 'dark-gray');
     margin: 2em 0;
 }
 
 @import 'label';
 @import 'input';
 @import 'textarea';
+@import 'select';
 @import 'checkbox';
 @import 'radiobutton';
 @import 'button';
+@import 'list';

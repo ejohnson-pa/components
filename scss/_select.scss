@@ -1,0 +1,83 @@
+.pa-select {
+    
+    & ~ label {
+        background: map-get($color, white);
+        left: 0;
+        margin-left: 10px;
+        padding: 0 10px;
+        position: absolute;
+        top: -0.5em;
+    }
+
+    background: map-get($color, white);
+    border: 1px solid map-get($color, dark-gray);
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 20em;
+    
+    select {
+        appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+        background: map-get($color, 'white');
+        background-image: none;
+        border: 0 !important;
+        box-shadow: none;
+        color: map-get($color, dark-gray);
+        font-size: 1rem;
+        height: 100%;
+        margin: 0;
+        outline: 0;
+        padding: 0 0 0 18px;
+        width: 100%;
+
+        &::-ms-expand {
+            display: none;    
+        }
+    }
+
+    &::before {
+        background: rgba(2, 145, 70, 0.15);
+        border-radius: 3px;
+        top: 5px;
+        right: 5px;
+        width: 40px;
+        height: 40px;
+        content: '';
+        padding: 0;
+        pointer-events: none;
+        position: absolute;
+        transition: .25s all ease;
+            -o-transition: .25s all ease;
+            -webkit-transition: .25s all ease;
+    }
+
+    &::after {
+        position: absolute;
+        border-style: solid;
+        border-width: 0.25em 0.25em 0 0;
+        border-color: map-get($color, 'teal');
+        content: '';
+        display: inline-block;
+        height: 1em;
+        right: 15px;
+        position: absolute;
+        top: 10px;
+        transform: rotate(135deg);
+        vertical-align: top;
+        width: 1em;
+    }
+
+    &:hover {
+        &::after {
+            color: #f39c12;
+        }
+    }
+  
+}

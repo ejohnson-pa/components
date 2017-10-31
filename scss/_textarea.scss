@@ -1,25 +1,25 @@
-.textarea {
+.pa-textarea {
     
     background: map-get($color, 'white');
     border: 1px solid map-get($color, 'dark-gray');
     border-radius: 3px;
-    padding: 20px 20px;
+    box-sizing: border-box;
     color: map-get($color, 'dark-gray');
     font-size: 1rem;
-    line-height: 1.5em;
-    width: 100%;
-    min-height: 140px;
     height: auto;
-    box-sizing: border-box;
+    line-height: 1.5em;
+    min-height: 140px;
+    padding: 20px 20px;
     vertical-align: top;
+    width: 100%;
 
     &~label {
-        position: absolute;
-        top: -0.5em;
-        left: 0;
         background: map-get($color, 'white');
+        left: 0;
         margin-left: 10px;
         padding: 0 10px;                    
+        position: absolute;
+        top: -0.5em;
     }
     
     &--valid {
@@ -31,27 +31,27 @@
     }
 
     &p {
-        .error {
+        .pa-error {
             color: map-get($color, 'brick'); 
-            margin: 1rem 20px 0;
             font-size: 0.75rem;
             line-height: 1.5em;
+            margin: 1rem 20px 0;
         }
     }
 
     &:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
         background: red;
         height: 5px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
 }
 
-.textarea ~ p.error {
+.pa-textarea ~ .pa-error {
     color: map-get($color, 'brick'); 
-    margin: 1rem 20px 0;
     font-size: 0.75rem;
     line-height: 1.5em;
+    margin: 1rem 20px 0;
 }

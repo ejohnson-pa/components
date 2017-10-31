@@ -1,28 +1,28 @@
-.label {
+.pa-label {
+    background-color: map-get($color, 'white');
     display: inline-block;
     font-size: 0.75rem;
     line-height: 1.5em;
     max-width: 80%;
     text-align: left;
-    background-color: map-get($color, 'white');
 }
 
-.label::before {
-    display: table;
+.pa-label::before {
     content: "";
+    display: table;
     margin-top: -0.18em;
 }
 
-.label::after {
-    display: table;
+.pa-label::after {
     content: "";
+    display: table;
     margin-bottom: -0.12em;
 }
 
-.label--valid {
+.pa-label--valid {
     color: map-get($color, 'green');
 }
 
-.label--error {
+.pa-label--error {
     color: map-get($color, 'brick');
 }

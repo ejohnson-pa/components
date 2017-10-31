@@ -11,38 +11,77 @@
 
         <h1>UI Pattern Library | Private Acre</h1>
 
-        <a href="#textboxes">Textboxes</a> | <a href="#textareas">Textareas</a> | <a href="#checkboxes">Checkboxes</a> | 
-        <a href="#radiobuttons">Radio Buttons</a> | <a href="#buttons">Buttons</a>
+        <a href="#typography">Typography</a> | <a href="#lists">Lists</a> | <a href="#textboxes">Textboxes</a> | <a href="#textareas">Textareas</a> | <a href="#selectboxes">Select Boxes</a> | <a href="#checkboxes">Checkboxes</a> | <a href="#radiobuttons">Radio Buttons</a> | <a href="#buttons">Buttons</a>
+
+        <hr>
+
+        <section id="typography">
+            <h2>Typography</h2>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, <a href="#">sapien eu commodo</a> sollicitudin, ex tellus ultrices sem, ac consectetur nulla orci at tellus. Mauris tempor sapien sed quam tincidunt, eget tristique felis fringilla. Integer pellentesque, felis ut varius facilisis, nisi odio molestie nunc, nec aliquam lacus massa et velit. Proin ac semper purus. Cras sit amet consectetur sem. Fusce ornare dui sed elit aliquet euismod. Nam eget nisi dolor. Suspendisse et risus sit amet nibh ultricies aliquam. Aliquam sodales lectus nibh, ac convallis felis tincidunt eu.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="lists">        
+            <h2>Lists</h2>
+            <ul>
+                <li>Porcupines</li>
+                <li>Porpoises</li>
+                <li>Hedgehogs</li>
+                <li>Sharks</li>
+                <li>Tasmanian Devils</li>
+                <li>Cats</li>
+            </ul>
+
+            <ol>
+                <li>Porcupines</li>
+                <li>Porpoises</li>
+                <li>Hedgehogs</li>
+                <li>Sharks</li>
+                <li>Tasmanian Devils</li>
+                <li>Cats</li>
+            </ol>
+        </section>
 
         <hr>
 
         <section id="textboxes">
             <h2>Textboxes</h2>
             
-            <div class="fieldset">
-                <input type="text" name="input-1" id="input-1" class="textbox">
-                <label for="input-1" class="label">Blank textbox</label>
+            <div class="pa-fieldset">
+                <input type="text" name="input-1" id="input-1" class="pa-textbox">
+                <label for="input-1" class="pa-label">Blank textbox</label>
             </div>
             
-            <div class="fieldset">
-                <input type="text" name="input-2" id="input-2" class="textbox" placeholder="Placeholder example">
-                <label for="input-2" class="label">Textbox with placeholder</label>
+            <div class="pa-fieldset">
+                <input type="text" name="input-2" id="input-2" class="pa-textbox" placeholder="Placeholder example">
+                <label for="input-2" class="pa-label">Textbox with placeholder</label>
             </div>
 
-            <div class="fieldset">
-                <input type="text" name="input-3" id="input-3" class="textbox" value="User entered input text here.">
-                <label for="input-3" class="label">Textbox with user input</label>
+            <div class="pa-fieldset">
+                <input type="text" name="input-3" id="input-3" class="pa-textbox" value="User entered input text here.">
+                <label for="input-3" class="pa-label">Textbox with user input</label>
             </div>
             
-            <div class="fieldset">
-                <input type="text" name="input-4" id="input-4" class="textbox textbox--valid" value="Valid input text.">
-                <label for="input-4" class="label label--valid">Textbox in valid state</label>
+            <div class="pa-fieldset">
+                <input type="text" name="input-4" id="input-4" class="pa-textbox pa-textbox--valid" value="Valid input text.">
+                <label for="input-4" class="pa-label pa-label--valid">Textbox in valid state</label>
             </div>
             
-            <div class="fieldset">
-                <input type="text" name="input-5" id="input-5" class="textbox textbox--error" value="Valid input text.">
-                <label for="input-5" class="label label--error">Textbox in invalid state</label>
-                <p class="error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
+            <div class="pa-fieldset">
+                <input type="text" name="input-5" id="input-5" class="pa-textbox pa-textbox--error" value="Valid input text.">
+                <label for="input-5" class="pa-label pa-label--error">Textbox in invalid state</label>
+                <p class="pa-error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
             </div>
         </section>
 
@@ -51,25 +90,42 @@
         <section id="textareas">
             <h2>Textareas</h2>
             
-            <div class="fieldset">
-                <textarea type="text" name="textarea-1" id="textarea-1" class="textarea"></textarea>
-                <label for="textarea-1" class="label">Blank textarea</label>
+            <div class="pa-fieldset">
+                <textarea type="text" name="textarea-1" id="textarea-1" class="pa-textarea"></textarea>
+                <label for="textarea-1" class="pa-label">Blank textarea</label>
             </div>
 
-            <div class="fieldset">
-                <textarea type="text" name="textarea-2" id="textarea-2" class="textarea">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
-                <label for="textarea-2" class="label">Textarea with user input</label>
+            <div class="pa-fieldset">
+                <textarea type="text" name="textarea-2" id="textarea-2" class="pa-textarea">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
+                <label for="textarea-2" class="pa-label">Textarea with user input</label>
             </div>
 
-            <div class="fieldset">
-                <textarea type="text" name="textarea-3" id="textarea-3" class="textarea textarea--valid">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
-                <label for="textarea-3" class="label label--valid">Textarea in valid state</label>
+            <div class="pa-fieldset">
+                <textarea type="text" name="textarea-3" id="textarea-3" class="pa-textarea pa-textarea--valid">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
+                <label for="textarea-3" class="pa-label pa-label--valid">Textarea in valid state</label>
             </div>
 
-            <div class="fieldset">
-                <textarea type="text" name="textarea-4" id="textarea-4" class="textarea textarea--error">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
-                <label for="textarea-4" class="label label--error">Textarea in invalid state</label>
-                <p class="error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
+            <div class="pa-fieldset">
+                <textarea type="text" name="textarea-4" id="textarea-4" class="pa-textarea pa-textarea--error">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
+                <label for="textarea-4" class="pa-label pa-label--error">Textarea in invalid state</label>
+                <p class="pa-error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="selectboxes">
+            <h2>Select Boxes</h2>
+            <div class="pa-fieldset">
+                <div class="pa-select">
+                    <select name="slct" id="slct">
+                        <option>Choose an option</option>
+                        <option value="1">Option One</option>
+                        <option value="2">Option Two</option>
+                        <option value="3">Option Three</option>
+                    </select>
+                </div>
+                <label for="slct" class="pa-label">Testing</label>
             </div>
         </section>
 
@@ -78,16 +134,16 @@
         <section id="checkboxes">
             <h2>Checkboxes</h2>
     
-            <div class="fieldset">
-                <div class="checkbox">
+            <div class="pa-fieldset">
+                <div class="pa-checkbox">
                     <input type="checkbox" name="checkbox-1" id="checkbox-1">
                     <label for="checkbox-1">Checkbox Option 1</label>
                 </div>
-                <div class="checkbox">
+                <div class="pa-checkbox">
                     <input type="checkbox" name="checkbox-2" id="checkbox-2" checked>
                     <label for="checkbox-2">Checkbox Option 2</label>
                 </div>
-                <div class="checkbox">
+                <div class="pa-checkbox">
                     <input type="checkbox" name="checkbox-3" id="checkbox-3">
                     <label for="checkbox-3">Checkbox Option 3</label>
                 </div>
@@ -99,16 +155,16 @@
         <section id="radiobuttons">
             <h2>Radio Buttons</h2>
     
-            <div class="fieldset">
-                <div class="radiobutton">
+            <div class="pa-fieldset">
+                <div class="pa-radiobutton">
                     <input type="radio" name="radiobutton" id="radiobutton-1">
                     <label for="radiobutton-1">Radio Button 1</label>
                 </div>
-                <div class="radiobutton">
+                <div class="pa-radiobutton">
                     <input type="radio" name="radiobutton" id="radiobutton-2" checked>
                     <label for="radiobutton-2">Radio Button 2</label>
                 </div>
-                <div class="radiobutton">
+                <div class="pa-radiobutton">
                     <input type="radio" name="radiobutton" id="radiobutton-3">
                     <label for="radiobutton-3">Radio Button 3</label>
                 </div>
@@ -120,21 +176,21 @@
         <section id="buttons">
             <h2>Buttons</h2>
     
-            <div class="fieldset">
+            <div class="pa-fieldset">
                 <h3>Progressive Button</h3>
-                <div class="button">
+                <div class="pa-button">
                     <button name="button1" id="button1">
                         Do Awesome Stuff
                     </button>
                 </div>
                 <h3>Destructive Button</h3>
-                <div class="button button--destructive">
+                <div class="pa-button pa-button--destructive">
                     <button name="button2" id="button2">
                         Delete
                     </button>
                 </div>
                 <h3>Text-Only Button</h3>
-                <div class="button button--text-only">
+                <div class="pa-button pa-button--text-only">
                     <button name="button3" id="button3">
                         Do Stuff That’s Fine But Less Preferred
                     </button>
@@ -142,51 +198,53 @@
             </div>
         </section>
 
+        <hr>
+
         <section id="button-groups">
             <h2>Button Groups</h2>
     
-            <div class="fieldset button-group button-group--stack-vertical">
+            <div class="pa-fieldset pa-button-group pa-button-group--w-xlarge pa-button-group--stack-vertical">
                 <h3>Double Affirmative</h3>
-                <div class="button">
+                <div class="pa-button">
                     <button name="button4" id="button4">
                         Do Awesome Stuff
                     </button>
                 </div>
-                <div class="button">
+                <div class="pa-button">
                     <button name="button5" id="button5">
                         Do Other Awesome Stuff
                     </button>
                 </div>
             </div>
 
-            <div class="fieldset button-group button-group--stack-vertical">
+            <div class="pa-fieldset pa-button-group pa-button-group--w-large pa-button-group--stack-vertical">
                 <h3>Mixed Intent</h3>
-                <div class="button">
+                <div class="pa-button">
                     <button name="button6" id="button6">
                         Do Awesome Stuff
                     </button>
                 </div>
-                <div class="button button--destructive">
+                <div class="pa-button pa-button--destructive">
                     <button name="button7" id="button7">
                         Delete Stuff
                     </button>
                 </div>
             </div>
 
-            <div class="fieldset button-group button-group--stack-vertical">
-                    <h3>Preferred + Fallback Non-Destructive</h3>
-                    <div class="button">
-                        <button name="button8" id="button8">
-                            Do Awesome Stuff
-                        </button>
-                    </div>
-                    <div class="button button--text-only">
-                        <button name="button9" id="button9">
-                            Do Stuff That’s Fine But Less Preferred
-                        </button>
-                    </div>
+            <div class="pa-fieldset pa-button-group pa-button-group--w-xxxlarge pa-button-group--stack-vertical">
+                <h3>Preferred + Fallback Non-Destructive</h3>
+                <div class="pa-button">
+                    <button name="button8" id="button8">
+                        Do Awesome Stuff
+                    </button>
                 </div>
-            </section>
+                <div class="pa-button pa-button--text-only">
+                    <button name="button9" id="button9">
+                        Do Stuff That’s Fine But Less Preferred
+                    </button>
+                </div>
+            </div>
+        </section>
 
     </body>
 </html>

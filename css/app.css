@@ -1,287 +1,418 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Raleway:500");
 /**
 TODO: AP get clarity on greens 
 **/
-html {
-  font-size: 16px;
-  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
-  line-height: 1.5em;
-  color: #595959; }
-
-.fieldset {
-  position: relative;
-  margin-bottom: 2rem; }
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:500,600");
+h1, h2, h3, h4, h5, h6 {
+  color: #226267;
+  font-family: "Raleway", Arial, Helvetica, sans-serif; }
 
 h1 {
-  margin-bottom: 1em;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.27em; }
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75em; }
+
+p {
+  color: #595959;
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375em;
+  margin: 0 0 1.75rem; }
+
+a {
+  color: #0192D0;
+  text-decoration: none; }
+  a:hover {
+    border-bottom: 1px dashed #0192D0; }
+
+html {
+  color: #595959;
+  font-size: 16px;
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
   line-height: 1.5em; }
+
+.pa-fieldset {
+  margin-bottom: 2rem;
+  position: relative; }
 
 hr {
   border: 0;
-  border-top: 1px solid #595959 z;
+  border-top: 1px solid #595959;
   margin: 2em 0; }
 
-.label {
+.pa-label {
+  background-color: #fff;
   display: inline-block;
   font-size: 0.75rem;
   line-height: 1.5em;
   max-width: 80%;
-  text-align: left;
-  background-color: #fff; }
+  text-align: left; }
 
-.label::before {
-  display: table;
+.pa-label::before {
   content: "";
+  display: table;
   margin-top: -0.18em; }
 
-.label::after {
-  display: table;
+.pa-label::after {
   content: "";
+  display: table;
   margin-bottom: -0.12em; }
 
-.label--valid {
+.pa-label--valid {
   color: #029146; }
 
-.label--error {
+.pa-label--error {
   color: #B12A0B; }
 
-.textbox ~ label {
-  position: absolute;
-  top: -0.5em;
+.pa-textbox ~ label {
   left: 0;
   margin-left: 10px;
-  padding: 0 10px; }
+  padding: 0 10px;
+  position: absolute;
+  top: -0.5em; }
 
-.textbox {
+.pa-textbox {
   border: 1px solid #595959;
   border-radius: 3px;
-  padding: 19px 20px;
+  box-sizing: border-box;
   color: #595959;
   font-size: 1rem;
-  width: 100%;
   height: 60px;
-  box-sizing: border-box; }
+  padding: 19px 20px;
+  width: 100%; }
 
-.textbox--error {
+.pa-textbox--error {
   border-color: #B12A0B; }
 
-.textbox ~ p.error {
+.pa-textbox ~ .pa-error {
   color: #B12A0B;
-  margin: 1rem 20px 0;
   font-size: 0.75rem;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  margin: 1rem 20px 0; }
 
-.textarea {
+.pa-textarea {
   background: #fff;
   border: 1px solid #595959;
   border-radius: 3px;
-  padding: 20px 20px;
+  box-sizing: border-box;
   color: #595959;
   font-size: 1rem;
-  line-height: 1.5em;
-  width: 100%;
-  min-height: 140px;
   height: auto;
-  box-sizing: border-box;
-  vertical-align: top; }
-  .textarea ~ label {
-    position: absolute;
-    top: -0.5em;
-    left: 0;
+  line-height: 1.5em;
+  min-height: 140px;
+  padding: 20px 20px;
+  vertical-align: top;
+  width: 100%; }
+  .pa-textarea ~ label {
     background: #fff;
+    left: 0;
     margin-left: 10px;
-    padding: 0 10px; }
-  .textarea--valid {
+    padding: 0 10px;
+    position: absolute;
+    top: -0.5em; }
+  .pa-textarea--valid {
     border-color: #029146; }
-  .textarea--error {
+  .pa-textarea--error {
     border-color: #B12A0B; }
-  .textareap .error {
+  .pa-textareap .pa-error {
     color: #B12A0B;
-    margin: 1rem 20px 0;
     font-size: 0.75rem;
-    line-height: 1.5em; }
-  .textarea:before {
+    line-height: 1.5em;
+    margin: 1rem 20px 0; }
+  .pa-textarea:before {
+    background: red;
+    height: 5px;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    background: red;
-    height: 5px; }
+    width: 100%; }
 
-.textarea ~ p.error {
+.pa-textarea ~ .pa-error {
   color: #B12A0B;
-  margin: 1rem 20px 0;
   font-size: 0.75rem;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  margin: 1rem 20px 0; }
 
-.checkbox {
-  margin-bottom: 20px; }
-  .checkbox input[type="checkbox"] {
-    opacity: 0;
+.pa-select {
+  border: 1px solid #595959;
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 20em; }
+  .pa-select ~ label {
+    left: 0;
+    margin-left: 10px;
+    padding: 0 10px;
     position: absolute;
-    left: -9999rem; }
-    .checkbox input[type="checkbox"] + label::after {
+    top: -0.5em; }
+  .pa-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background: #fff;
+    background-image: none;
+    border: 0 !important;
+    box-shadow: none;
+    color: #595959;
+    font-size: 1rem;
+    height: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0 0 0 18px;
+    width: 100%; }
+    .pa-select select::-ms-expand {
+      display: none; }
+  .pa-select::before {
+    background: rgba(2, 145, 70, 0.15);
+    border-radius: 3px;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    content: '';
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: .25s all ease;
+    -o-transition: .25s all ease;
+    -webkit-transition: .25s all ease; }
+  .pa-select::after {
+    position: absolute;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    border-color: #226267;
+    content: '';
+    display: inline-block;
+    height: 1em;
+    right: 15px;
+    position: absolute;
+    top: 10px;
+    transform: rotate(135deg);
+    vertical-align: top;
+    width: 1em; }
+  .pa-select:hover::after {
+    color: #f39c12; }
+
+.pa-checkbox {
+  margin-bottom: 20px; }
+  .pa-checkbox input[type="checkbox"] {
+    left: -9999rem;
+    opacity: 0;
+    position: absolute; }
+    .pa-checkbox input[type="checkbox"] + label::after {
       content: none; }
-    .checkbox input[type="checkbox"]:hover + label::after, .checkbox input[type="checkbox"]:focus + label::after {
+    .pa-checkbox input[type="checkbox"]:hover + label::after, .pa-checkbox input[type="checkbox"]:focus + label::after {
       content: "";
       opacity: .4; }
-    .checkbox input[type="checkbox"]:checked + label {
+    .pa-checkbox input[type="checkbox"]:checked + label {
       color: #008A34;
       font-weight: 600; }
-      .checkbox input[type="checkbox"]:checked + label::before {
+      .pa-checkbox input[type="checkbox"]:checked + label::before {
         background-color: rgba(0, 138, 52, 0.15); }
-      .checkbox input[type="checkbox"]:checked + label::after {
+      .pa-checkbox input[type="checkbox"]:checked + label::after {
         content: "";
         opacity: 1; }
-    .checkbox input[type="checkbox"]:focus + label::before {
+    .pa-checkbox input[type="checkbox"]:focus + label::before {
       outline: #3b99fc auto 5px; }
-  .checkbox label {
-    position: relative;
+  .pa-checkbox label {
     display: inline-block;
     line-height: 30px;
-    padding-left: 50px; }
-    .checkbox label::before, .checkbox label::after {
+    padding-left: 50px;
+    position: relative; }
+    .pa-checkbox label::before, .pa-checkbox label::after {
       content: "";
       display: inline-block;
       position: absolute; }
-    .checkbox label::before {
-      width: 28px;
-      height: 28px;
+    .pa-checkbox label::before {
       background: transparent;
       border: 1px solid #595959;
       border-radius: 3px;
-      margin-right: 20px;
+      height: 28px;
       left: 0;
-      top: 0; }
-    .checkbox label::after {
-      width: 15px;
-      height: 6px;
-      top: 8px;
-      left: 5px;
-      border: 5px solid #008A34;
-      border-top: none;
-      border-right: none;
+      margin-right: 20px;
+      top: 0;
+      width: 28px; }
+    .pa-checkbox label::after {
       background: transparent;
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
+      border: 5px solid #008A34;
+      border-right: none;
+      border-top: none;
+      height: 6px;
+      left: 5px;
+      top: 8px;
+      width: 15px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg); }
 
-.radiobutton {
+.pa-radiobutton {
   margin-bottom: 20px; }
-  .radiobutton input[type="radio"] {
+  .pa-radiobutton input[type="radio"] {
+    left: -9999rem;
     opacity: 0;
-    position: absolute;
-    left: -9999rem; }
-    .radiobutton input[type="radio"] + label::after {
+    position: absolute; }
+    .pa-radiobutton input[type="radio"] + label::after {
       content: none; }
-    .radiobutton input[type="radio"]:hover + label::after, .radiobutton input[type="radio"]:focus + label::after {
+    .pa-radiobutton input[type="radio"]:hover + label::after, .pa-radiobutton input[type="radio"]:focus + label::after {
       content: "";
       opacity: .4; }
-    .radiobutton input[type="radio"]:checked + label {
+    .pa-radiobutton input[type="radio"]:checked + label {
       color: #008A34;
       font-weight: 600; }
-      .radiobutton input[type="radio"]:checked + label::before {
+      .pa-radiobutton input[type="radio"]:checked + label::before {
         background-color: rgba(0, 138, 52, 0.15); }
-      .radiobutton input[type="radio"]:checked + label::after {
+      .pa-radiobutton input[type="radio"]:checked + label::after {
         content: "";
         opacity: 1; }
-    .radiobutton input[type="radio"]:focus + label::before {
+    .pa-radiobutton input[type="radio"]:focus + label::before {
       outline: #3b99fc auto 5px; }
-  .radiobutton label {
-    position: relative;
+  .pa-radiobutton label {
     display: inline-block;
     line-height: 30px;
-    padding-left: 50px; }
-    .radiobutton label::before, .radiobutton label::after {
+    padding-left: 50px;
+    position: relative; }
+    .pa-radiobutton label::before, .pa-radiobutton label::after {
       content: "";
       display: inline-block;
       position: absolute; }
-    .radiobutton label::before {
-      width: 28px;
-      height: 28px;
+    .pa-radiobutton label::before {
       background: transparent;
       border: 1px solid #595959;
       border-radius: 14px;
-      margin-right: 20px;
+      height: 28px;
       left: 0;
-      top: 0; }
-    .radiobutton label::after {
-      width: 18px;
-      height: 18px;
-      top: 6px;
-      left: 6px;
+      margin-right: 20px;
+      top: 0;
+      width: 28px; }
+    .pa-radiobutton label::after {
+      background: #008A34;
       border-radius: 9px;
-      background: #008A34; }
+      height: 18px;
+      left: 6px;
+      top: 6px;
+      width: 18px; }
 
-.button {
+.pa-button {
   cursor: pointer;
+  background-color: rgba(2, 145, 70, 0.05);
+  border: 0;
+  border-radius: 3px;
   display: inline-block;
   margin: 0;
   padding: 10px;
-  background-color: rgba(2, 145, 70, 0.05);
-  border-radius: 3px;
-  border: 0;
+  transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; }
-  .button:hover {
+  -o-transition: all 0.2s ease-out; }
+  .pa-button:hover {
     background-color: rgba(2, 145, 70, 0.15); }
-  .button:active button {
-    padding: 0 30px;
+  .pa-button:active button {
     line-height: 40px;
-    margin: 10px; }
-  .button button {
-    cursor: pointer;
-    display: block;
-    border: 0;
-    margin: 0;
+    margin: 10px;
+    padding: 0 30px; }
+  .pa-button button {
     background-color: #008A34;
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 60px;
-    padding: 0 40px;
+    border: 0;
     border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0;
     min-width: 100px;
-    width: auto;
+    padding: 0 40px;
+    transition: all 0.05s ease-out;
     -webkit-transition: all 0.05s ease-out;
     -moz-transition: all 0.05s ease-out;
     -o-transition: all 0.05s ease-out;
-    transition: all 0.05s ease-out;
+    width: auto;
     /* TODO - onRelease()
         line-height: 70px;
         margin: 5px;
         padding: 0 45px;
         */ }
-  .button--destructive {
+  .pa-button--destructive {
     background-color: rgba(177, 42, 11, 0.05); }
-    .button--destructive:hover {
+    .pa-button--destructive:hover {
       background-color: rgba(177, 42, 11, 0.15); }
-    .button--destructive button {
+    .pa-button--destructive button {
       background-color: #B12A0B; }
-  .button--text-only {
+  .pa-button--text-only {
     background: transparent;
     margin: 0;
     padding: 5px 10px 5px; }
-    .button--text-only button {
-      padding: 0;
+    .pa-button--text-only button {
       background: transparent;
-      font-size: 1rem;
       color: #0192D0;
-      padding: 0;
-      line-height: 1rem; }
-    .button--text-only:hover {
+      font-size: 1rem;
+      line-height: 1rem;
+      padding: 0; }
+    .pa-button--text-only:hover {
       background-color: transparent; }
-    .button--text-only:active button {
-      padding: 0;
+    .pa-button--text-only:active button {
       line-height: 60px;
-      margin: 0; }
+      margin: 0;
+      padding: 0; }
+  .pa-button--w-xsmall button {
+    min-width: 120px; }
+  .pa-button--w-small button {
+    min-width: 160px; }
+  .pa-button--w-medium button {
+    min-width: 200px; }
+  .pa-button--w-large button {
+    min-width: 240px; }
+  .pa-button--w-xlarge button {
+    min-width: 280px; }
+  .pa-button--w-xxlarge button {
+    min-width: 340px; }
 
-.button-group {
+.pa-button-group {
   display: block;
   width: auto; }
-  .button-group--stack-vertical .button {
-    margin: 0 auto;
+  .pa-button-group--stack-vertical .pa-button {
     display: table;
     margin-bottom: 20px; }
+  .pa-button-group--w-xsmall button {
+    min-width: 120px; }
+  .pa-button-group--w-small button {
+    min-width: 160px; }
+  .pa-button-group--w-medium button {
+    min-width: 200px; }
+  .pa-button-group--w-large button {
+    min-width: 240px; }
+  .pa-button-group--w-xlarge button {
+    min-width: 280px; }
+  .pa-button-group--w-xxlarge button {
+    min-width: 340px; }
+  .pa-button-group--w-xxxlarge button {
+    min-width: 340px; }
+  .pa-button-group--centered {
+    margin: 0 auto; }
+
+ul {
+  list-style-type: disc;
+  padding-left: 18px; }
+  ul li {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625em;
+    padding-left: 4px; }
+
+ol {
+  padding-left: 18px; }
+  ol li {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625em;
+    padding-left: 4px; }

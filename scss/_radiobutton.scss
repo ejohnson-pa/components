@@ -1,11 +1,11 @@
-.radiobutton {
+.pa-radiobutton {
     
     margin-bottom: 20px;
 
     input[type="radio"] {
+        left: $offscreen;
         opacity: 0;
         position: absolute;
-        left: $offscreen;
 
         &+label{
             &::after {
@@ -47,10 +47,10 @@
     }
 
     label {
-        position: relative;
         display: inline-block;
         line-height: 30px;
         padding-left: 50px;
+        position: relative;
 
         &::before, &::after {
             content: "";
@@ -59,23 +59,23 @@
         }
 
         &::before {
-            width: 28px;
-            height: 28px;
             background: transparent;
             border: 1px solid map-get($color, 'dark-gray');   
             border-radius: 14px;
-            margin-right: 20px;
+            height: 28px;
             left: 0;
+            margin-right: 20px;
             top: 0;
+            width: 28px;
         }
 
         &::after {
-            width: 18px;
-            height: 18px;
-            top: 6px;
-            left: 6px;
-            border-radius: 9px;
             background: map-get($color, 'brand-green');
+            border-radius: 9px;
+            height: 18px;
+            left: 6px;
+            top: 6px;
+            width: 18px;
         }
     }
 }
