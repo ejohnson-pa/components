@@ -5,7 +5,7 @@ $offscreen: -9999rem;
 
 html {
     color: map-get($color, 'dark-gray');
-    font-size: $typography-base;
+    font-size: $typography-base-size;
     font-family: $font-nunito;
     line-height: 1.5em;
 }
@@ -21,6 +21,19 @@ hr {
     margin: 2em 0;
 }
 
+.bckg--deer {
+    background: url(../images/deer.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@mixin vertical-align() {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @import 'label';
 @import 'input';
 @import 'textarea';
@@ -29,3 +42,4 @@ hr {
 @import 'radiobutton';
 @import 'button';
 @import 'list';
+@import 'notification';
