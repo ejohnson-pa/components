@@ -12,6 +12,17 @@ $weight-medium: 500;
 $weight-semibold: 600;
 $weight-bold: 700;
 
+/* Type Scale */
+
+$text-xlarge: 1.75rem;
+$text-large: 1.375rem;
+$text-medium: 1.25rem;
+$text-regular: 1rem;
+
+// 1.75rem (28px)
+// 1.375rem (22px)
+// 1rem (16px)
+
 h1, h2, h3, h4, h5, h6 { 
     color: map-get($color, 'teal');
     font-family: $font-raleway;    

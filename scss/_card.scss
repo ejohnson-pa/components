@@ -1,0 +1,57 @@
+.card {
+
+    width: 280px;
+
+    img {
+        background: rgba(#9B9B9B, 0.05);
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+    }
+
+    &__info {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & > div {
+            flex: 1;            
+        }
+
+        &--price {
+            font-size: $text-xlarge;
+            font-weight: $weight-bold;
+            position: relative;
+            line-height: 0.7em;
+        }
+    
+        &--symbol {
+            vertical-align: top;
+            margin-left: 10px;
+            font-size: $text-medium;
+            margin-right: 0.25rem;
+        }
+
+        &--inner {
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        &--timespan {
+            color: map-get($color, 'light-gray');
+            font-size: $text-regular;
+            font-weight: $weight-regular;
+            vertical-align: top;
+        }
+
+        &--location {
+            font-size: $text-medium;
+            font-weight: $weight-bold;
+            margin-right: 10px;
+            text-align: right;
+        }
+    }
+
+}
