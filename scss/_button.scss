@@ -134,44 +134,80 @@
     }
 
     &--w-xsmall {
-        button {
-            min-width: 120px;
+        .pa-button {
+            button {
+                min-width: 120px;
+            }
+            &:active {
+                button {
+                    min-width: 100px;
+                }
+            }
         }
     }
 
     &--w-small {
-        button {
-            min-width: 160px;
+        .pa-button {
+            button {
+                min-width: 160px;
+            }
+            &:active {
+                button {
+                    min-width: 140px;
+                }
+            }
         }
     }
 
     &--w-medium {
-        button {
-            min-width: 200px;
+        .pa-button {
+            button {
+                min-width: 200px;
+            }
+            &:active {
+                button {
+                    min-width: 180px;
+                }
+            }
         }
     }
 
     &--w-large {
-        button {
-            min-width: 240px;
+        .pa-button {
+            button {
+                min-width: 240px;
+            }
+            &:active {
+                button {
+                    min-width: 220px;
+                }
+            }
         }
     }
 
     &--w-xlarge {
-        button {
-            min-width: 280px;
+        .pa-button {
+            button {
+                min-width: 280px;
+            }
+            &:active {
+                button {
+                    min-width: 260px;
+                }
+            }
         }
     }
 
     &--w-xxlarge {
-        button {
-            min-width: 340px;
-        }
-    }
-
-    &--w-xxxlarge {
-        button {
-              min-width: 340px;
+        .pa-button {
+            button {
+                min-width: 340px;
+            }
+            &:active {
+                button {
+                    min-width: 320px;
+                }
+            }
         }
     }
 

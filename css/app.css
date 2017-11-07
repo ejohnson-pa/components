@@ -389,20 +389,30 @@ hr {
   .pa-button-group--stack-vertical .pa-button {
     display: table;
     margin-bottom: 20px; }
-  .pa-button-group--w-xsmall button {
+  .pa-button-group--w-xsmall .pa-button button {
     min-width: 120px; }
-  .pa-button-group--w-small button {
+  .pa-button-group--w-xsmall .pa-button:active button {
+    min-width: 100px; }
+  .pa-button-group--w-small .pa-button button {
     min-width: 160px; }
-  .pa-button-group--w-medium button {
+  .pa-button-group--w-small .pa-button:active button {
+    min-width: 140px; }
+  .pa-button-group--w-medium .pa-button button {
     min-width: 200px; }
-  .pa-button-group--w-large button {
+  .pa-button-group--w-medium .pa-button:active button {
+    min-width: 180px; }
+  .pa-button-group--w-large .pa-button button {
     min-width: 240px; }
-  .pa-button-group--w-xlarge button {
+  .pa-button-group--w-large .pa-button:active button {
+    min-width: 220px; }
+  .pa-button-group--w-xlarge .pa-button button {
     min-width: 280px; }
-  .pa-button-group--w-xxlarge button {
+  .pa-button-group--w-xlarge .pa-button:active button {
+    min-width: 260px; }
+  .pa-button-group--w-xxlarge .pa-button button {
     min-width: 340px; }
-  .pa-button-group--w-xxxlarge button {
-    min-width: 340px; }
+  .pa-button-group--w-xxlarge .pa-button:active button {
+    min-width: 320px; }
   .pa-button-group--centered {
     margin: 0 auto; }
 
