@@ -30,7 +30,7 @@
         border-color: map-get($color, 'brick'); 
     }
 
-    &p {
+    p {
         .pa-error {
             color: map-get($color, 'brick'); 
             font-size: 0.75rem;
