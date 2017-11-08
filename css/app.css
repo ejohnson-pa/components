@@ -459,45 +459,45 @@ ol {
     .pa-notification--confirm--image-overlay {
       background-color: rgba(206, 238, 223, 0.9); }
 
-.card {
+.pa-card {
   width: 280px;
   background: rgba(155, 155, 155, 0.05);
   padding: 10px; }
-  .card img {
+  .pa-card img {
     box-sizing: border-box;
     width: 100%; }
-  .card__info {
+  .pa-card__info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: #000; }
-    .card__info > div {
+    .pa-card__info > div {
       flex: 1; }
-    .card__info--price {
+    .pa-card__info--price {
       font-size: 1.75rem;
       font-weight: 700;
       position: relative;
       line-height: 1em; }
-    .card__info--symbol {
+    .pa-card__info--symbol {
       vertical-align: top;
       font-size: 1.25rem;
       margin-right: 0.15rem; }
-    .card__info--inner {
+    .pa-card__info--inner {
       display: inline-block;
       text-align: center;
       vertical-align: top; }
-    .card__info--timespan {
+    .pa-card__info--timespan {
       color: #9B9B9B;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5em;
       vertical-align: top; }
-    .card__info--location {
+    .pa-card__info--location {
       font-size: 1.25rem;
       font-weight: 700;
       text-align: right; }
-  .card__description {
+  .pa-card__description {
     font-size: 0.75rem;
     line-height: 1.25rem;
-    margin: 20px 0 10px;
+    margin: 10px 0 10px;
     padding: 0 6px; }
