@@ -460,28 +460,28 @@ ol {
       background-color: rgba(206, 238, 223, 0.9); }
 
 .card {
-  width: 280px; }
+  width: 280px;
+  background: rgba(155, 155, 155, 0.05);
+  padding: 10px; }
   .card img {
-    background: rgba(155, 155, 155, 0.05);
     box-sizing: border-box;
-    padding: 10px;
     width: 100%; }
   .card__info {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    color: #000; }
     .card__info > div {
       flex: 1; }
     .card__info--price {
       font-size: 1.75rem;
       font-weight: 700;
       position: relative;
-      line-height: 0.7em; }
+      line-height: 1em; }
     .card__info--symbol {
       vertical-align: top;
-      margin-left: 10px;
       font-size: 1.25rem;
-      margin-right: 0.25rem; }
+      margin-right: 0.15rem; }
     .card__info--inner {
       display: inline-block;
       text-align: center;
@@ -490,9 +490,14 @@ ol {
       color: #9B9B9B;
       font-size: 1rem;
       font-weight: 400;
+      line-height: 1.5em;
       vertical-align: top; }
     .card__info--location {
       font-size: 1.25rem;
       font-weight: 700;
-      margin-right: 10px;
       text-align: right; }
+  .card__description {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    margin: 20px 0 10px;
+    padding: 0 6px; }

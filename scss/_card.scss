@@ -1,11 +1,11 @@
 .card {
 
     width: 280px;
-
+    background: rgba(#9B9B9B, 0.05); 
+    padding: 10px;
+    
     img {
-        background: rgba(#9B9B9B, 0.05);
         box-sizing: border-box;
-        padding: 10px;
         width: 100%;
     }
 
@@ -14,6 +14,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        color: map-get($color, 'black');
 
         & > div {
             flex: 1;            
@@ -23,14 +24,13 @@
             font-size: $text-xlarge;
             font-weight: $weight-bold;
             position: relative;
-            line-height: 0.7em;
+            line-height: 1em;
         }
     
         &--symbol {
             vertical-align: top;
-            margin-left: 10px;
             font-size: $text-medium;
-            margin-right: 0.25rem;
+            margin-right: 0.15rem;
         }
 
         &--inner {
@@ -43,15 +43,21 @@
             color: map-get($color, 'light-gray');
             font-size: $text-regular;
             font-weight: $weight-regular;
+            line-height: 1.5em;
             vertical-align: top;
         }
 
         &--location {
             font-size: $text-medium;
             font-weight: $weight-bold;
-            margin-right: 10px;
             text-align: right;
         }
     }
 
+    &__description {
+        font-size: $text-small;
+        line-height: 1.25rem;
+        margin: 20px 0 10px;
+        padding: 0 6px;
+    }
 }
