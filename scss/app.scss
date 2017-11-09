@@ -21,6 +21,12 @@ hr {
     margin: 2em 0;
 }
 
+.offscreen {
+    left: $offscreen;
+    position: absolute;
+}
+
+
 .bckg--deer {
     background: url(../images/deer.jpg);
     height: 300px;

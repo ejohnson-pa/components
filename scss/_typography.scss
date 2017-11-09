@@ -14,15 +14,21 @@ $weight-bold: 700;
 
 /* Type Scale */
 
-$text-xlarge: 1.75rem;
-$text-large: 1.375rem;
-$text-medium: 1.25rem;
-$text-regular: 1rem;
-$text-small: 0.75rem;
+$text-xxlarge: 3rem;  /* 48px */
+$text-xlarge: 2.25rem;  /* 36px */
+$text-large: 1.75rem;  /* 28px */
+$text-semi: 1.375rem;  /* 22px */
+$text-medium: 1.25rem;  /* 20px */
+$text-regular: 1rem;    /* 16px */
+$text-small: 0.75rem;   /* 12px */
 
-// 1.75rem (28px)
-// 1.375rem (22px)
-// 1rem (16px)
+.txt-xxlarge { font-size: $text-xxlarge; }
+.txt-xlarge { font-size: $text-xlarge; }
+.txt-large { font-size: $text-large; }
+.txt-semi { font-size: $text-semi; }
+.txt-medium { font-size: $text-medium; }
+.txt-regular { font-size: $text-regular; }
+.txt-small { font-size: $text-small; }
 
 h1, h2, h3, h4, h5, h6 { 
     color: map-get($color, 'teal');

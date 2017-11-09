@@ -23,6 +23,22 @@
         width: 20px;
     }
 
+    &__close {
+        background: 0;
+        border: 0;
+        height: 20px;
+        right: 1rem;
+        position: absolute;
+        top: 20px;
+        width: 20px;
+
+        & img {
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+    }
+
     &--confirm {
         background: map-get($color, 'pale-green');
 
