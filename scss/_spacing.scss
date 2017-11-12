@@ -1,0 +1,48 @@
+$directions: 'all', 'horizontal', 'vertical', 'top', 'right', 'bottom', 'left';
+
+$sp-tiny: 0.5rem;       // 8px
+$sp-small: 1rem;        // 16px
+$sp-normal: 1.5rem;     // 24px
+$sp-semi: 2rem;         // 32px
+$sp-large: 3rem;        // 48px
+$sp-xlarge: 4rem;       // 64px
+$sp-xxlarge: 6rem;      // 96px
+
+@mixin sp-margin($size, $direction) {
+    @if $direction == 'all' {
+        margin: $size;
+    }
+    @else if $direction == 'horizontal' {
+        margin: 0 $size;
+    }
+    @else if $direction == 'vertical' {
+        margin: $size 0;
+    }
+    @else {
+        margin-#{$direction}: $size;
+    }
+}
+
+@each $dir in $directions {
+    .margin-#{$dir}-tiny {
+        @include sp-margin($sp-tiny, $dir);
+    }
+    .margin-#{$dir}-small {
+        @include sp-margin($sp-small, $dir);
+    }
+    .margin-#{$dir}-normal {
+        @include sp-margin($sp-normal, $dir);
+    }
+    .margin-#{$dir}-semi {
+        @include sp-margin($sp-semi, $dir);
+    }
+    .margin-#{$dir}-large {
+        @include sp-margin($sp-large, $dir);
+    }
+    .margin-#{$dir}-xlarge {
+        @include sp-margin($sp-xlarge, $dir);
+    }
+    .margin-#{$dir}-xxlarge {
+        @include sp-margin($sp-xxlarge, $dir);
+    }
+}

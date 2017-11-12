@@ -9,417 +9,635 @@
 </head>
     <body>
 
-        <h1>UI Pattern Library | Private Acre</h1>
+        <div class="pa-grid">
 
-        <a href="#typography">Typography</a> | 
-        <a href="#lists">Lists</a> | 
-        <a href="#textboxes">Textboxes</a> | 
-        <a href="#textareas">Textareas</a> | 
-        <a href="#selectboxes">Select Boxes</a> | 
-        <a href="#checkboxes">Checkboxes</a> | 
-        <a href="#radiobuttons">Radio Buttons</a> | 
-        <a href="#buttons">Buttons</a> |
-        <a href="#notifications">Notifications</a> |
-        <a href="#cards">Cards</a>
+            <h1 class="heading-xlarge">UI Pattern Library | Private Acre</h1>
 
-        <hr>
+            <a href="#grid">Grid</a> | 
+            <a href="#typography">Typography</a> | 
+            <a href="#textboxes">Textboxes</a> | 
+            <a href="#textareas">Textareas</a> | 
+            <a href="#selectboxes">Select Boxes</a> | 
+            <a href="#checkboxes">Checkboxes</a> | 
+            <a href="#radiobuttons">Radio Buttons</a> | 
+            <a href="#buttons">Buttons</a> |
+            <a href="#notifications">Notifications</a> |
+            <a href="#cards">Cards</a>
 
-        <section id="typography">
-            <h2>Typography</h2>
+            <hr>
 
-            <p class="txt-xxlarge">This text is 48px.</p>
-            <p class="txt-xlarge">This text is 36px.</p>
-            <p class="txt-large">This text is 28px.</p>
-            <p class="txt-semi">This text is 22px.</p>
-            <p class="txt-medium">This text is 20px.</p>
-            <p class="txt-regular">This text is 16px.</p>
-            <p class="txt-small">This text is 12px.</p>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, <a href="#">sapien eu commodo</a> sollicitudin, ex tellus ultrices sem, ac consectetur nulla orci at tellus. Mauris tempor sapien sed quam tincidunt, eget tristique felis fringilla. Integer pellentesque, felis ut varius facilisis, nisi odio molestie nunc, nec aliquam lacus massa et velit. Proin ac semper purus. Cras sit amet consectetur sem. Fusce ornare dui sed elit aliquet euismod. Nam eget nisi dolor. Suspendisse et risus sit amet nibh ultricies aliquam. Aliquam sodales lectus nibh, ac convallis felis tincidunt eu.
-            </p>
-        </section>
-
-        <hr>
-
-        <section id="lists">        
-            <h2>Lists</h2>
-            <ul>
-                <li>Porcupines</li>
-                <li>Porpoises</li>
-                <li>Hedgehogs</li>
-                <li>Sharks</li>
-                <li>Tasmanian Devils</li>
-                <li>Cats</li>
-            </ul>
-
-            <ol>
-                <li>Porcupines</li>
-                <li>Porpoises</li>
-                <li>Hedgehogs</li>
-                <li>Sharks</li>
-                <li>Tasmanian Devils</li>
-                <li>Cats</li>
-            </ol>
-        </section>
-
-        <hr>
-
-        <section id="textboxes">
-            <h2>Textboxes</h2>
-            
-            <div class="pa-fieldset">
-                <input type="text" name="input-1" id="input-1" class="pa-textbox">
-                <label for="input-1" class="pa-label">Blank textbox</label>
-            </div>
-            
-            <div class="pa-fieldset">
-                <input type="text" name="input-2" id="input-2" class="pa-textbox" placeholder="Placeholder example">
-                <label for="input-2" class="pa-label">Textbox with placeholder</label>
-            </div>
-
-            <div class="pa-fieldset">
-                <input type="text" name="input-3" id="input-3" class="pa-textbox" value="User entered input text here.">
-                <label for="input-3" class="pa-label">Textbox with user input</label>
-            </div>
-            
-            <div class="pa-fieldset">
-                <input type="text" name="input-4" id="input-4" class="pa-textbox pa-textbox--valid" value="Valid input text.">
-                <label for="input-4" class="pa-label pa-label--valid">Textbox in valid state</label>
-            </div>
-            
-            <div class="pa-fieldset">
-                <input type="text" name="input-5" id="input-5" class="pa-textbox pa-textbox--error" value="Valid input text.">
-                <label for="input-5" class="pa-label pa-label--error">Textbox in invalid state</label>
-                <p class="pa-error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
-            </div>
-        </section>
-
-        <hr>
-        
-        <section id="textareas">
-            <h2>Textareas</h2>
-            
-            <div class="pa-fieldset">
-                <textarea type="text" name="textarea-1" id="textarea-1" class="pa-textarea"></textarea>
-                <label for="textarea-1" class="pa-label">Blank textarea</label>
-            </div>
-
-            <div class="pa-fieldset">
-                <textarea type="text" name="textarea-2" id="textarea-2" class="pa-textarea">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
-                <label for="textarea-2" class="pa-label">Textarea with user input</label>
-            </div>
-
-            <div class="pa-fieldset">
-                <textarea type="text" name="textarea-3" id="textarea-3" class="pa-textarea pa-textarea--valid">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
-                <label for="textarea-3" class="pa-label pa-label--valid">Textarea in valid state</label>
-            </div>
-
-            <div class="pa-fieldset">
-                <textarea type="text" name="textarea-4" id="textarea-4" class="pa-textarea pa-textarea--error">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
-                <label for="textarea-4" class="pa-label pa-label--error">Textarea in invalid state</label>
-                <p class="pa-error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="selectboxes">
-            <h2>Select Boxes</h2>
-            <div class="pa-fieldset">
-                <div class="pa-select">
-                    <select name="slct" id="slct">
-                        <option>Choose an option</option>
-                        <option value="1">Option One</option>
-                        <option value="2">Option Two</option>
-                        <option value="3">Option Three</option>
-                    </select>
+            <section id="grid" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Responsive Grid</h2>
+                <h3 class="heading-medium">Column Basics</h3>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-8 pa-col--lg-1"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-4 pa-col--md-2 pa-col--lg-10"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-4 pa-col--md-6 pa-col--lg-1"><div class="pa-grid-fill"></div></div>
                 </div>
-                <label for="slct" class="pa-label">Testing</label>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="checkboxes">
-            <h2>Checkboxes</h2>
-    
-            <div class="pa-fieldset">
-                <div class="pa-checkbox">
-                    <input type="checkbox" name="checkbox-1" id="checkbox-1">
-                    <label for="checkbox-1">Checkbox Option 1</label>
+                <div class="pa-row">
+                    <div class="pa-col--sm-1 pa-col--md-3 pa-col--lg-2"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-3 pa-col--md-5 pa-col--lg-10"><div class="pa-grid-fill"></div></div>
                 </div>
-                <div class="pa-checkbox">
-                    <input type="checkbox" name="checkbox-2" id="checkbox-2" checked>
-                    <label for="checkbox-2">Checkbox Option 2</label>
+                <div class="pa-row">
+                    <div class="pa-col--sm-3 pa-col--md-4 pa-col--lg-11"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1 pa-col--md-4 pa-col--lg-1"><div class="pa-grid-fill"></div></div>
                 </div>
-                <div class="pa-checkbox">
-                    <input type="checkbox" name="checkbox-3" id="checkbox-3">
-                    <label for="checkbox-3">Checkbox Option 3</label>
+                <h3 class="heading-medium">12 divs - 100% row coverage in large viewport</h3>
+                <p>
+                    Twelve columns covered by twelve &lt;div&gt; in fluid display. At medium breakpoints (8-column support), 12 &lt;div&gt; will wrap to the next 
+                    line. In the example, we add offset-1 on the medium breakpoint to the 1st and 7th elements to preserve symmetry on the medium-sized viewport.
+                </p>
+                <div class="pa-row">
+                    <div class="pa-col--sm-1 pa-col--md-2 pa-col--md-offset-1 pa-col--lg-2 pa-col--lg-offset-0"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1 pa-col--md-2 pa-col--lg-2"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1 pa-col--md-2 pa-col--lg-2"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1 pa-col--md-2 pa-col--md-offset-1 pa-col--lg-2 pa-col--lg-offset-0"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1 pa-col--md-2 pa-col--lg-2"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1 pa-col--md-2 pa-col--lg-2"><div class="pa-grid-fill"></div></div>
                 </div>
-            </div>
-        </section>
-        
-        <hr>
-        
-        <section id="radiobuttons">
-            <h2>Radio Buttons</h2>
-    
-            <div class="pa-fieldset">
-                <div class="pa-radiobutton">
-                    <input type="radio" name="radiobutton" id="radiobutton-1">
-                    <label for="radiobutton-1">Radio Button 1</label>
+                <h3 class="heading-medium">8 divs - 100% row coverage in medium viewport</h3>
+                <p>
+                    Eight columns covered by eight &lt;div&gt; in fluid display. At small breakpoints (4-column support), 8 &lt;div&gt; will wrap to the next 
+                    line. Here, no offset is needed because the grid provides natural symmetry for the transition between 4- and 8-columns.
+                </p>
+                <div class="pa-row">
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
                 </div>
-                <div class="pa-radiobutton">
-                    <input type="radio" name="radiobutton" id="radiobutton-2" checked>
-                    <label for="radiobutton-2">Radio Button 2</label>
+                <h3 class="heading-medium">4 divs - 100% row coverage at small viewport</h3>
+                <p>
+                    Four columns covered by four &lt;div&gt;.
+                </p>
+                <div class="pa-row">
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1</div></div>
                 </div>
-                <div class="pa-radiobutton">
-                    <input type="radio" name="radiobutton" id="radiobutton-3">
-                    <label for="radiobutton-3">Radio Button 3</label>
+                <h3 class="heading-medium">All column test (sm-md-lg)</h3>
+                <p>
+                    Showcases different sizes and how they respond at the multi-layout breakpoints. 
+                </p>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-8 pa-col--lg-12"><div class="pa-grid-fill">4-8-12</div></div>
                 </div>
-            </div>
-        </section>
+                <div class="pa-row">
+                    <div class="pa-col--sm-1 pa-col--md-1 pa-col--lg-1"><div class="pa-grid-fill">1-1-1</div></div>
+                    <div class="pa-col--sm-3 pa-col--md-7 pa-col--lg-11"><div class="pa-grid-fill">3-7-11</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-2 pa-col--md-2 pa-col--lg-2"><div class="pa-grid-fill">2-2-2</div></div>
+                    <div class="pa-col--sm-2 pa-col--md-6 pa-col--lg-10"><div class="pa-grid-fill">2-6-10</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-3 pa-col--md-3 pa-col--lg-3"><div class="pa-grid-fill">3-3-3</div></div>
+                    <div class="pa-col--sm-1 pa-col--md-5 pa-col--lg-9"><div class="pa-grid-fill">1-5-9</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-4 pa-col--lg-4"><div class="pa-grid-fill">4-4-4</div></div>
+                    <div class="pa-col--sm-0 pa-col--md-4 pa-col--lg-8"><div class="pa-grid-fill">0-4-8</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-5 pa-col--lg-5"><div class="pa-grid-fill">4-5-5</div></div>
+                    <div class="pa-col--sm-0 pa-col--md-3 pa-col--lg-7"><div class="pa-grid-fill">0-4-7</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-6 pa-col--lg-6"><div class="pa-grid-fill">4-6-6</div></div>
+                    <div class="pa-col--sm-0 pa-col--md-2 pa-col--lg-6"><div class="pa-grid-fill">0-2-6</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-7 pa-col--lg-7"><div class="pa-grid-fill">4-7-7</div></div>
+                    <div class="pa-col--sm-0 pa-col--md-1 pa-col--lg-5"><div class="pa-grid-fill">0-1-5</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-8 pa-col--lg-8"><div class="pa-grid-fill">4-8-8</div></div>
+                    <div class="pa-col--sm-0 pa-col--md-0 pa-col--lg-4"><div class="pa-grid-fill">0-0-4</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-8 pa-col--lg-9"><div class="pa-grid-fill">4-8-9</div></div>
+                    <div class="pa-col--sm-0 pa-col--md-0 pa-col--lg-3"><div class="pa-grid-fill">0-0-3</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-8 pa-col--lg-10"><div class="pa-grid-fill">4-8-10</div></div>
+                    <div class="pa-col--sm-0 pa-col--md-0 pa-col--lg-2"><div class="pa-grid-fill">0-0-2</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-8 pa-col--lg-11"><div class="pa-grid-fill">4-8-11</div></div>
+                    <div class="pa-col--sm-0 pa-col--md-0 pa-col--lg-1"><div class="pa-grid-fill">0-0-1</div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--md-8 pa-col--lg-12"><div class="pa-grid-fill">4-8-12</div></div>
+                </div>
+                <h3 class="heading-medium">Flex auto test</h3>
+                <p>
+                    ODS Grid can support auto-width columns as well. In the following example, we've defined the first &lt;div&gt; to span 
+                    two columns. The following three divs will take up the remaining space using flexbox to define the consistent width.
+                </p>
+                <div class="pa-row">
+                    <div class="pa-col--sm-2 pa-col--md-2 pa-col--lg-2"><div class="pa-grid-fill">2</div></div>
+                    <div><div class="pa-grid-fill">*</div></div>
+                    <div><div class="pa-grid-fill">*</div></div>
+                    <div><div class="pa-grid-fill">*</div></div>
+                </div>
 
-        <hr>
-
-        <section id="buttons">
-            <h2>Buttons</h2>
-    
-            <div class="pa-fieldset">
-                <h3>Progressive Button</h3>
-                <div class="pa-button">
-                    <button name="button1" id="button1">
-                        Do Awesome Stuff
-                    </button>
+                <h3 class="heading-medium">Offsets</h3>
+                <p>
+                    ODS Grid supports offsets for grid columns.
+                </p>
+                <div class="pa-row">
+                    <div class="pa-col--sm-1 pa-col--sm-offset-3 pa-col--md-1 pa-col--md-offset-7 pa-col--lg-1 pa-col--lg-offset-11"><div class="pa-grid-fill"></div></div>
                 </div>
-                <h3>Destructive Button</h3>
-                <div class="pa-button pa-button--destructive">
-                    <button name="button2" id="button2">
-                        Delete
-                    </button>
+                <div class="pa-row">
+                    <div class="pa-col--sm-2 pa-col--sm-offset-2 pa-col--md-2 pa-col--md-offset-6 pa-col--lg-2 pa-col--lg-offset-10"><div class="pa-grid-fill"></div></div>
                 </div>
-                <h3>Text-Only Button</h3>
-                <div class="pa-button pa-button--text-only">
-                    <button name="button3" id="button3">
-                        Do Stuff That’s Fine But Less Preferred
-                    </button>
+                <div class="pa-row">
+                    <div class="pa-col--sm-3 pa-col--sm-offset-1 pa-col--md-3 pa-col--md-offset-5 pa-col--lg-3 pa-col--lg-offset-9"><div class="pa-grid-fill"></div></div>
                 </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="button-groups">
-            <h2>Button Groups</h2>
-    
-            <div class="pa-fieldset pa-button-group pa-button-group--w-xxlarge pa-button-group--stack-vertical">
-                <h3>Double Affirmative</h3>
-                <div class="pa-button">
-                    <button name="button4" id="button4">
-                        Do Awesome Stuff
-                    </button>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--sm-offset-0 pa-col--md-4 pa-col--md-offset-4 pa-col--lg-4 pa-col--lg-offset-8"><div class="pa-grid-fill"></div></div>
                 </div>
-                <div class="pa-button">
-                    <button name="button5" id="button5">
-                        Do Other Awesome Stuff
-                    </button>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--sm-offset-0 pa-col--md-5 pa-col--md-offset-3 pa-col--lg-5 pa-col--lg-offset-7"><div class="pa-grid-fill"></div></div>
                 </div>
-            </div>
-
-            <div class="pa-fieldset pa-button-group pa-button-group--w-large pa-button-group--stack-vertical">
-                <h3>Mixed Intent</h3>
-                <div class="pa-button">
-                    <button name="button6" id="button6">
-                        Do Awesome Stuff
-                    </button>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--sm-offset-0 pa-col--md-6 pa-col--md-offset-2 pa-col--lg-6 pa-col--lg-offset-6"><div class="pa-grid-fill"></div></div>
                 </div>
-                <div class="pa-button pa-button--destructive">
-                    <button name="button7" id="button7">
-                        Delete Stuff
-                    </button>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--sm-offset-0 pa-col--md-7 pa-col--md-offset-1 pa-col--lg-7 pa-col--lg-offset-5"><div class="pa-grid-fill"></div></div>
                 </div>
-            </div>
-
-            <div class="pa-fieldset pa-button-group pa-button-group--w-xxxlarge pa-button-group--stack-vertical">
-                <h3>Preferred + Fallback Non-Destructive</h3>
-                <div class="pa-button">
-                    <button name="button8" id="button8">
-                        Do Awesome Stuff
-                    </button>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--sm-offset-0 pa-col--md-8 pa-col--md-offset-0 pa-col--lg-8 pa-col--lg-offset-4"><div class="pa-grid-fill"></div></div>
                 </div>
-                <div class="pa-button pa-button--text-only">
-                    <button name="button9" id="button9">
-                        Do Stuff That’s Fine But Less Preferred
-                    </button>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--sm-offset-0 pa-col--md-8 pa-col--md-offset-0 pa-col--lg-9 pa-col--lg-offset-3"><div class="pa-grid-fill"></div></div>
                 </div>
-            </div>
-        </section>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--sm-offset-0 pa-col--md-8 pa-col--md-offset-0 pa-col--lg-10 pa-col--lg-offset-2"><div class="pa-grid-fill"></div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--sm-offset-0 pa-col--md-8 pa-col--md-offset-0 pa-col--lg-11 pa-col--lg-offset-1"><div class="pa-grid-fill"></div></div>
+                </div>
+                <div class="pa-row">
+                    <div class="pa-col--sm-4 pa-col--sm-offset-0 pa-col--md-8 pa-col--md-offset-0 pa-col--lg-12 pa-col--lg-offset-0"><div class="pa-grid-fill"></div></div>
+                </div>
 
-        <hr>
-        
-        <section id="notifications">
-            <h2>Notifications</h2>
+                <h3 class="heading-medium">Alignment</h3>
+                <div class="pa-row pa-row--sm-start">
+                    <div class="pa-col--sm-2 pa-col--md-2 pa-col--lg-2"><div class="pa-grid-fill"></div></div>
+                </div>
+                <div class="pa-row pa-row--sm-center">
+                    <div class="pa-col--sm-2 pa-col--md-2 pa-col--lg-2"><div class="pa-grid-fill"></div></div>
+                </div>
+                <div class="pa-row pa-row--sm-end">
+                    <div class="pa-col--sm-2 pa-col--md-2 pa-col--lg-2"><div class="pa-grid-fill"></div></div>
+                </div>
 
-            <div class="pa-notification">
-                <p>Alert text does not always have to use icon.</p>
-                <button class="pa-notification__close">
-                    <span class="offscreen">Close</span>
-                    <img src="images/icon-cancel-close.svg">
-                </button>
-            </div>
+                <div class="pa-row pa-row--sm-top">
+                    <div class="pa-col--sm-2 pa-col--md-4 pa-col--lg-6"><div class="pa-grid-fill pa-grid-fill--large pa-grid-fill--light"></div></div>
+                    <div class="pa-col--sm-2 pa-col--md-4 pa-col--lg-6"><div class="pa-grid-fill"></div></div>
+                </div>
+                <div class="pa-row pa-row--sm-middle">
+                    <div class="pa-col--sm-2 pa-col--md-4 pa-col--lg-6"><div class="pa-grid-fill pa-grid-fill--large pa-grid-fill--light"></div></div>
+                    <div class="pa-col--sm-2 pa-col--md-4 pa-col--lg-6"><div class="pa-grid-fill"></div></div>
+                </div>
+                <div class="pa-row pa-row--sm-bottom">
+                    <div class="pa-col--sm-2 pa-col--md-4 pa-col--lg-6"><div class="pa-grid-fill pa-grid-fill--large pa-grid-fill--light"></div></div>
+                    <div class="pa-col--sm-2 pa-col--md-4 pa-col--lg-6"><div class="pa-grid-fill"></div></div>
+                </div>
 
-            <br >
+                <h3 class="heading-medium">Distribution</h3>
+                <h4 class="heading-small">Space Between</h4>
+                <div class="pa-row pa-row--sm-between">
+                    <div class="pa-col--sm-1"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1"><div class="pa-grid-fill"></div></div>
+                </div>
 
-            <div class="pa-notification">
-                <i class="pa-notification__icon">
-                    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>icon-warning</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Alerts---Notifications" transform="translate(-112.000000, -183.000000)" stroke="#595959">
-                                <g id="Group-2" transform="translate(96.000000, 162.000000)">
-                                    <g id="icon-warning" transform="translate(16.000000, 20.000000)">
-                                        <path d="M11.7888544,3.57770876 L18.5527864,17.1055728 L18.5527864,17.1055728 C19.0467649,18.0935298 18.6463162,19.2948759 17.6583592,19.7888544 C17.3806483,19.9277098 17.0744222,20 16.763932,20 L3.23606798,20 L3.23606798,20 C2.13149848,20 1.23606798,19.1045695 1.23606798,18 C1.23606798,17.6895098 1.30835816,17.3832837 1.4472136,17.1055728 L8.21114562,3.57770876 L8.21114562,3.57770876 C8.70512412,2.58975177 9.9064702,2.18930308 10.8944272,2.68328157 C11.281482,2.87680898 11.595327,3.19065396 11.7888544,3.57770876 Z" id="Triangle"></path>
-                                        <path d="M10,7.5 L10,12.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
-                                        <path d="M10,15.5 L10,16.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </i>
-                <p>Alert text goes here</p>
-                <button class="pa-notification__close">
-                    <span class="offscreen">Close</span>
-                    <img src="images/icon-cancel-close.svg">
-                </button>
-            </div>
+                <h4 class="heading-small">Space Around</h4>
+                <div class="pa-row pa-row--sm-around">
+                    <div class="pa-col--sm-1"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1"><div class="pa-grid-fill"></div></div>
+                    <div class="pa-col--sm-1"><div class="pa-grid-fill"></div></div>
+                </div>
 
-            <br>
+            </section>
 
-            <div class="pa-notification">
-                <i class="pa-notification__icon">
-                    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>icon-warning</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Alerts---Notifications" transform="translate(-112.000000, -183.000000)" stroke="#595959">
-                                <g id="Group-2" transform="translate(96.000000, 162.000000)">
-                                    <g id="icon-warning" transform="translate(16.000000, 20.000000)">
-                                        <path d="M11.7888544,3.57770876 L18.5527864,17.1055728 L18.5527864,17.1055728 C19.0467649,18.0935298 18.6463162,19.2948759 17.6583592,19.7888544 C17.3806483,19.9277098 17.0744222,20 16.763932,20 L3.23606798,20 L3.23606798,20 C2.13149848,20 1.23606798,19.1045695 1.23606798,18 C1.23606798,17.6895098 1.30835816,17.3832837 1.4472136,17.1055728 L8.21114562,3.57770876 L8.21114562,3.57770876 C8.70512412,2.58975177 9.9064702,2.18930308 10.8944272,2.68328157 C11.281482,2.87680898 11.595327,3.19065396 11.7888544,3.57770876 Z" id="Triangle"></path>
-                                        <path d="M10,7.5 L10,12.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
-                                        <path d="M10,15.5 L10,16.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </i>
-                <p>Alert Text Can be Two Lines. If that’s necessary.</p>
-                <button class="pa-notification__close">
-                    <span class="offscreen">Close</span>
-                    <img src="images/icon-cancel-close.svg">
-                </button>    
-            </div>
+            <hr>
 
-            <br>
+            <section id="typography" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Typography</h2>
+
+                <div class="margin-bottom-large">
+                    <h3 class="heading-medium underline">Type Scale</h3>
+                    <p class="txt-small">This text is 12px.</p>
+                    <p class="txt-regular">This text is 16px.</p>
+                    <p class="txt-medium">This text is 22px.</p>
+                    <p class="txt-large">This text is 32px.</p>
+                    <p class="txt-xlarge">This text is 48px.</p>
+                    <p class="txt-xxlarge">This text is 64px.</p>
+                </div>
+
+                <div class="margin-bottom-large">
+                    <h3 class="heading-medium underline">Headings</h3>
+                    <h1 class="heading-xlarge">Heading One</h1>
+                    <h2 class="heading-large">Heading Two</h2>
+                    <h3 class="heading-medium">Heading Three</h3>
+                    <h4 class="heading-small">Heading Four</h4>
+                </div>
+
+                <div class="margin-bottom-large">
+                    <h3 class="heading-medium underline">Body Copy</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, <a href="#">sapien eu commodo</a> sollicitudin, ex tellus ultrices sem, ac consectetur nulla orci at tellus. Mauris tempor sapien sed quam tincidunt, eget tristique felis fringilla. Integer pellentesque, felis ut varius facilisis, nisi odio molestie nunc, nec aliquam lacus massa et velit. Proin ac semper purus. Cras sit amet consectetur sem. Fusce ornare dui sed elit aliquet euismod. Nam eget nisi dolor. Suspendisse et risus sit amet nibh ultricies aliquam. Aliquam sodales lectus nibh, ac convallis felis tincidunt eu.
+                    </p>
+                </div>
                 
-            <div class="pa-notification">
-                <i class="pa-notification__icon">
-                    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>icon-warning</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Alerts---Notifications" transform="translate(-112.000000, -183.000000)" stroke="#595959">
-                                <g id="Group-2" transform="translate(96.000000, 162.000000)">
-                                    <g id="icon-warning" transform="translate(16.000000, 20.000000)">
-                                        <path d="M11.7888544,3.57770876 L18.5527864,17.1055728 L18.5527864,17.1055728 C19.0467649,18.0935298 18.6463162,19.2948759 17.6583592,19.7888544 C17.3806483,19.9277098 17.0744222,20 16.763932,20 L3.23606798,20 L3.23606798,20 C2.13149848,20 1.23606798,19.1045695 1.23606798,18 C1.23606798,17.6895098 1.30835816,17.3832837 1.4472136,17.1055728 L8.21114562,3.57770876 L8.21114562,3.57770876 C8.70512412,2.58975177 9.9064702,2.18930308 10.8944272,2.68328157 C11.281482,2.87680898 11.595327,3.19065396 11.7888544,3.57770876 Z" id="Triangle"></path>
-                                        <path d="M10,7.5 L10,12.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
-                                        <path d="M10,15.5 L10,16.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </i>
-                <p><a href="#">Action Required Alert</a></p>
-                <button class="pa-notification__close">
-                    <span class="offscreen">Close</span>
-                    <img src="images/icon-cancel-close.svg">
-                </button>
-            </div>
+                <div class="margin-bottom-large">
+                    <h3 class="heading-medium underline">Lists</h3>
+                    <ul>
+                        <li>Porcupines</li>
+                        <li>Porpoises</li>
+                        <li>Hedgehogs</li>
+                        <li>Sharks</li>
+                        <li>Tasmanian Devils</li>
+                        <li>Cats</li>
+                    </ul>
 
-            <br>
+                    <ol>
+                        <li>Porcupines</li>
+                        <li>Porpoises</li>
+                        <li>Hedgehogs</li>
+                        <li>Sharks</li>
+                        <li>Tasmanian Devils</li>
+                        <li>Cats</li>
+                    </ol>
+                </div>
 
-            <div class="bckg--deer">
-                <div class="pa-notification pa-notification--image-overlay">
-                    <p>If block displayed over image, color block should be displayed at 90% opacity.</p>
+            </section>
+
+            <hr>
+
+            <section id="textboxes" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Textboxes</h2>
+                
+                <div class="pa-fieldset">
+                    <input type="text" name="input-1" id="input-1" class="pa-textbox">
+                    <label for="input-1" class="pa-label">Blank textbox</label>
+                </div>
+                
+                <div class="pa-fieldset">
+                    <input type="text" name="input-2" id="input-2" class="pa-textbox" placeholder="Placeholder example">
+                    <label for="input-2" class="pa-label">Textbox with placeholder</label>
+                </div>
+
+                <div class="pa-fieldset">
+                    <input type="text" name="input-3" id="input-3" class="pa-textbox" value="User entered input text here.">
+                    <label for="input-3" class="pa-label">Textbox with user input</label>
+                </div>
+                
+                <div class="pa-fieldset">
+                    <input type="text" name="input-4" id="input-4" class="pa-textbox pa-textbox--valid" value="Valid input text.">
+                    <label for="input-4" class="pa-label pa-label--valid">Textbox in valid state</label>
+                </div>
+                
+                <div class="pa-fieldset">
+                    <input type="text" name="input-5" id="input-5" class="pa-textbox pa-textbox--error" value="Valid input text.">
+                    <label for="input-5" class="pa-label pa-label--error">Textbox in invalid state</label>
+                    <p class="pa-error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
+                </div>
+            </section>
+
+            <hr>
+            
+            <section id="textareas" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Textareas</h2>
+                
+                <div class="pa-fieldset">
+                    <textarea type="text" name="textarea-1" id="textarea-1" class="pa-textarea"></textarea>
+                    <label for="textarea-1" class="pa-label">Blank textarea</label>
+                </div>
+
+                <div class="pa-fieldset">
+                    <textarea type="text" name="textarea-2" id="textarea-2" class="pa-textarea">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
+                    <label for="textarea-2" class="pa-label">Textarea with user input</label>
+                </div>
+
+                <div class="pa-fieldset">
+                    <textarea type="text" name="textarea-3" id="textarea-3" class="pa-textarea pa-textarea--valid">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
+                    <label for="textarea-3" class="pa-label pa-label--valid">Textarea in valid state</label>
+                </div>
+
+                <div class="pa-fieldset">
+                    <textarea type="text" name="textarea-4" id="textarea-4" class="pa-textarea pa-textarea--error">Mash tun bittering hops alcohol ale brewing, cask priming amber shelf life. hop back bitter, hefe lauter tun racking, filter keg alpha acid. pitch balthazar wort chiller beer length hand pump heat exchanger caramel malt; wheat beer glass. oxidized noble hops terminal gravity original gravity oxidized.</textarea>
+                    <label for="textarea-4" class="pa-label pa-label--error">Textarea in invalid state</label>
+                    <p class="pa-error">Error text here. Try to keep error text no longer than two lines on mobile displays, if possible.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="selectboxes" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Select Boxes</h2>
+                <div class="pa-fieldset">
+                    <div class="pa-select">
+                        <select name="slct" id="slct">
+                            <option>Choose an option</option>
+                            <option value="1">Option One</option>
+                            <option value="2">Option Two</option>
+                            <option value="3">Option Three</option>
+                        </select>
+                    </div>
+                    <label for="slct" class="pa-label">Testing</label>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="checkboxes" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Checkboxes</h2>
+        
+                <div class="pa-fieldset">
+                    <div class="pa-checkbox">
+                        <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                        <label for="checkbox-1">Checkbox Option 1</label>
+                    </div>
+                    <div class="pa-checkbox">
+                        <input type="checkbox" name="checkbox-2" id="checkbox-2" checked>
+                        <label for="checkbox-2">Checkbox Option 2</label>
+                    </div>
+                    <div class="pa-checkbox">
+                        <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                        <label for="checkbox-3">Checkbox Option 3</label>
+                    </div>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <section id="radiobuttons" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Radio Buttons</h2>
+        
+                <div class="pa-fieldset">
+                    <div class="pa-radiobutton">
+                        <input type="radio" name="radiobutton" id="radiobutton-1">
+                        <label for="radiobutton-1">Radio Button 1</label>
+                    </div>
+                    <div class="pa-radiobutton">
+                        <input type="radio" name="radiobutton" id="radiobutton-2" checked>
+                        <label for="radiobutton-2">Radio Button 2</label>
+                    </div>
+                    <div class="pa-radiobutton">
+                        <input type="radio" name="radiobutton" id="radiobutton-3">
+                        <label for="radiobutton-3">Radio Button 3</label>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="buttons" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Buttons</h2>
+        
+                <div class="pa-fieldset">
+                    <h3 class="heading-medium">Progressive Button</h3>
+                    <div class="pa-button">
+                        <button name="button1" id="button1">
+                            Do Awesome Stuff
+                        </button>
+                    </div>
+                    <h3 class="heading-medium">Destructive Button</h3>
+                    <div class="pa-button pa-button--destructive">
+                        <button name="button2" id="button2">
+                            Delete
+                        </button>
+                    </div>
+                    <h3 class="heading-medium">Text-Only Button</h3>
+                    <div class="pa-button pa-button--text-only">
+                        <button name="button3" id="button3">
+                            Do Stuff That’s Fine But Less Preferred
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="button-groups" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Button Groups</h2>
+
+                <h3 class="heading-medium">Double Affirmative</h3>
+                <div class="pa-fieldset pa-button-group pa-button-group--w-xxlarge pa-button-group--stack-vertical">
+                    <div class="pa-button">
+                        <button name="button4" id="button4">
+                            Do Awesome Stuff
+                        </button>
+                    </div>
+                    <div class="pa-button">
+                        <button name="button5" id="button5">
+                            Do Other Awesome Stuff
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="heading-medium">Mixed Intent</h3>
+                <div class="pa-fieldset pa-button-group pa-button-group--w-large pa-button-group--stack-vertical">
+                    <div class="pa-button">
+                        <button name="button6" id="button6">
+                            Do Awesome Stuff
+                        </button>
+                    </div>
+                    <div class="pa-button pa-button--destructive">
+                        <button name="button7" id="button7">
+                            Delete Stuff
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="heading-medium">Preferred + Fallback Non-Destructive</h3>
+                <div class="pa-fieldset pa-button-group pa-button-group--w-xxxlarge pa-button-group--stack-vertical">
+                    <div class="pa-button">
+                        <button name="button8" id="button8">
+                            Do Awesome Stuff
+                        </button>
+                    </div>
+                    <div class="pa-button pa-button--text-only">
+                        <button name="button9" id="button9">
+                            Do Stuff That’s Fine But Less Preferred
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+            
+            <section id="notifications" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Notifications</h2>
+
+                <div class="pa-notification">
+                    <p>Alert text does not always have to use icon.</p>
                     <button class="pa-notification__close">
                         <span class="offscreen">Close</span>
                         <img src="images/icon-cancel-close.svg">
                     </button>
                 </div>
-            </div>
 
-            <br>
-                
-            <div class="pa-notification pa-notification--confirm">
-                <i class="pa-notification__icon">
-                    <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-                        <title>icon-checkmark</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Alerts---Notifications" transform="translate(-111.000000, -468.000000)" stroke="#008A34">
-                                <g id="Group-4" transform="translate(96.000000, 449.000000)">
-                                    <g id="icon-checkmark" transform="translate(16.000000, 20.000000)">
-                                        <circle id="Oval" cx="10" cy="10" r="10"></circle>
-                                        <polyline id="Path-2" stroke-width="2" points="6.15384615 10.0066304 8.53637947 12.3076923 13.8461538 7.17948718"></polyline>
+                <br >
+
+                <div class="pa-notification">
+                    <i class="pa-notification__icon">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>icon-warning</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Alerts---Notifications" transform="translate(-112.000000, -183.000000)" stroke="#595959">
+                                    <g id="Group-2" transform="translate(96.000000, 162.000000)">
+                                        <g id="icon-warning" transform="translate(16.000000, 20.000000)">
+                                            <path d="M11.7888544,3.57770876 L18.5527864,17.1055728 L18.5527864,17.1055728 C19.0467649,18.0935298 18.6463162,19.2948759 17.6583592,19.7888544 C17.3806483,19.9277098 17.0744222,20 16.763932,20 L3.23606798,20 L3.23606798,20 C2.13149848,20 1.23606798,19.1045695 1.23606798,18 C1.23606798,17.6895098 1.30835816,17.3832837 1.4472136,17.1055728 L8.21114562,3.57770876 L8.21114562,3.57770876 C8.70512412,2.58975177 9.9064702,2.18930308 10.8944272,2.68328157 C11.281482,2.87680898 11.595327,3.19065396 11.7888544,3.57770876 Z" id="Triangle"></path>
+                                            <path d="M10,7.5 L10,12.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
+                                            <path d="M10,15.5 L10,16.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
+                                        </g>
                                     </g>
                                 </g>
                             </g>
-                        </g>
-                    </svg>            
-                </i>
-                <button class="pa-notification__close">
-                    <span class="offscreen">Close</span>
-                    <img src="images/icon-cancel-close.svg">
-                </button>
-                <p>Your message has been sent successfully.</p>
-            </div>
-
-        </section>
-
-        <hr>
-        
-        <section id="cards">
-            <h2>Cards</h2>
-
-            <div class="pa-card">
-                <img src="images/card-image.png">
-                <div class="pa-card__info">
-                    <div class="pa-card__info--price">
-                        <span class="pa-card__info--symbol">$</span><div class="pa-card__info--inner">
-                            <span>95</span><br>
-                            <span class="pa-card__info--timespan">day</span>
-                        </div>  
-                    </div>
-                    <div class="pa-card__info--location">Shelbyville, IL</div>
+                        </svg>
+                    </i>
+                    <p>Alert text goes here</p>
+                    <button class="pa-notification__close">
+                        <span class="offscreen">Close</span>
+                        <img src="images/icon-cancel-close.svg">
+                    </button>
                 </div>
-                <p class="pa-card__description">
-                    Deer, Turkey, Coyote, Fowl, Small Game.<br>
-                    1-8 Hunters. Archery, Rifles, Shotguns, Pistols
-                </p>
-            </div>
 
-            <br>
+                <br>
 
-            <div class="pa-card">
+                <div class="pa-notification">
+                    <i class="pa-notification__icon">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>icon-warning</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Alerts---Notifications" transform="translate(-112.000000, -183.000000)" stroke="#595959">
+                                    <g id="Group-2" transform="translate(96.000000, 162.000000)">
+                                        <g id="icon-warning" transform="translate(16.000000, 20.000000)">
+                                            <path d="M11.7888544,3.57770876 L18.5527864,17.1055728 L18.5527864,17.1055728 C19.0467649,18.0935298 18.6463162,19.2948759 17.6583592,19.7888544 C17.3806483,19.9277098 17.0744222,20 16.763932,20 L3.23606798,20 L3.23606798,20 C2.13149848,20 1.23606798,19.1045695 1.23606798,18 C1.23606798,17.6895098 1.30835816,17.3832837 1.4472136,17.1055728 L8.21114562,3.57770876 L8.21114562,3.57770876 C8.70512412,2.58975177 9.9064702,2.18930308 10.8944272,2.68328157 C11.281482,2.87680898 11.595327,3.19065396 11.7888544,3.57770876 Z" id="Triangle"></path>
+                                            <path d="M10,7.5 L10,12.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
+                                            <path d="M10,15.5 L10,16.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </i>
+                    <p>Alert Text Can be Two Lines. If that’s necessary.</p>
+                    <button class="pa-notification__close">
+                        <span class="offscreen">Close</span>
+                        <img src="images/icon-cancel-close.svg">
+                    </button>    
+                </div>
+
+                <br>
+                    
+                <div class="pa-notification">
+                    <i class="pa-notification__icon">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>icon-warning</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Alerts---Notifications" transform="translate(-112.000000, -183.000000)" stroke="#595959">
+                                    <g id="Group-2" transform="translate(96.000000, 162.000000)">
+                                        <g id="icon-warning" transform="translate(16.000000, 20.000000)">
+                                            <path d="M11.7888544,3.57770876 L18.5527864,17.1055728 L18.5527864,17.1055728 C19.0467649,18.0935298 18.6463162,19.2948759 17.6583592,19.7888544 C17.3806483,19.9277098 17.0744222,20 16.763932,20 L3.23606798,20 L3.23606798,20 C2.13149848,20 1.23606798,19.1045695 1.23606798,18 C1.23606798,17.6895098 1.30835816,17.3832837 1.4472136,17.1055728 L8.21114562,3.57770876 L8.21114562,3.57770876 C8.70512412,2.58975177 9.9064702,2.18930308 10.8944272,2.68328157 C11.281482,2.87680898 11.595327,3.19065396 11.7888544,3.57770876 Z" id="Triangle"></path>
+                                            <path d="M10,7.5 L10,12.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
+                                            <path d="M10,15.5 L10,16.5" id="Line" stroke-width="2" stroke-linecap="square" stroke="#595959"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </i>
+                    <p><a href="#">Action Required Alert</a></p>
+                    <button class="pa-notification__close">
+                        <span class="offscreen">Close</span>
+                        <img src="images/icon-cancel-close.svg">
+                    </button>
+                </div>
+
+                <br>
+
+                <div class="bckg--deer">
+                    <div class="pa-notification pa-notification--image-overlay">
+                        <p>If block displayed over image, color block should be displayed at 90% opacity.</p>
+                        <button class="pa-notification__close">
+                            <span class="offscreen">Close</span>
+                            <img src="images/icon-cancel-close.svg">
+                        </button>
+                    </div>
+                </div>
+
+                <br>
+                    
+                <div class="pa-notification pa-notification--confirm">
+                    <i class="pa-notification__icon">
+                        <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-checkmark</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Alerts---Notifications" transform="translate(-111.000000, -468.000000)" stroke="#008A34">
+                                    <g id="Group-4" transform="translate(96.000000, 449.000000)">
+                                        <g id="icon-checkmark" transform="translate(16.000000, 20.000000)">
+                                            <circle id="Oval" cx="10" cy="10" r="10"></circle>
+                                            <polyline id="Path-2" stroke-width="2" points="6.15384615 10.0066304 8.53637947 12.3076923 13.8461538 7.17948718"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>            
+                    </i>
+                    <button class="pa-notification__close">
+                        <span class="offscreen">Close</span>
+                        <img src="images/icon-cancel-close.svg">
+                    </button>
+                    <p>Your message has been sent successfully.</p>
+                </div>
+
+            </section>
+
+            <hr>
+            
+            <section id="cards" class="margin-bottom-xlarge">
+                <h2 class="heading-large">Cards</h2>
+
+                <div class="pa-card">
+                    <img src="images/card-image.png">
+                    <div class="pa-card__info">
+                        <div class="pa-card__info--price">
+                            <span class="pa-card__info--symbol">$</span><div class="pa-card__info--inner">
+                                <span>95</span><br>
+                                <span class="pa-card__info--timespan">day</span>
+                            </div>  
+                        </div>
+                        <div class="pa-card__info--location">Shelbyville, IL</div>
+                    </div>
+                    <p class="pa-card__description">
+                        Deer, Turkey, Coyote, Fowl, Small Game.<br>
+                        1-8 Hunters. Archery, Rifles, Shotguns, Pistols
+                    </p>
+                </div>
+
+                <br>
+
+                <div class="pa-card">
                     <img src="images/card-image.png">
                     <div class="pa-card__info">
                         <div class="pa-card__info--price">
@@ -437,6 +655,8 @@
                 </div>
     
             </section>
+
+        </div>
 
     </body>
 </html>

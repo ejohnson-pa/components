@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:500,600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,600,700');
 
 $font-nunito: 'Nunito Sans', Arial, Helvetica, sans-serif;
 $font-raleway: 'Raleway', Arial, Helvetica, sans-serif;
@@ -14,52 +14,51 @@ $weight-bold: 700;
 
 /* Type Scale */
 
-$text-xxlarge: 3rem;  /* 48px */
-$text-xlarge: 2.25rem;  /* 36px */
-$text-large: 1.75rem;  /* 28px */
-$text-semi: 1.375rem;  /* 22px */
-$text-medium: 1.25rem;  /* 20px */
-$text-regular: 1rem;    /* 16px */
-$text-small: 0.75rem;   /* 12px */
+$text-xxlarge: 4rem;        /* 64px */
+$text-xlarge: 3rem;         /* 48px */
+$text-large: 2rem;          /* 32px */
+$text-medium: 1.375rem;     /* 22px */
+$text-regular: 1rem;        /* 16px */
+$text-small: 0.75rem;       /* 12px */
+
 
 .txt-xxlarge { font-size: $text-xxlarge; }
 .txt-xlarge { font-size: $text-xlarge; }
 .txt-large { font-size: $text-large; }
-.txt-semi { font-size: $text-semi; }
 .txt-medium { font-size: $text-medium; }
 .txt-regular { font-size: $text-regular; }
 .txt-small { font-size: $text-small; }
 
 h1, h2, h3, h4, h5, h6 { 
-    color: map-get($color, 'teal');
-    font-family: $font-raleway;    
-}
-h1 {
-    font-size: 1.375rem;
-    font-weight: $weight-medium;
-    line-height: 1.27em;
+    font-weight: $weight-regular;
+    font-size: $text-regular;
 }
 
-h2 {
-    font-size: 1rem;
-    font-weight: $weight-semibold;
-    line-height: 1.75em;
+.heading-xlarge {
+    font-size: $text-large;
+    font-family: $font-raleway;
 }
 
-h3 {
-
+.heading-large {
+    font-size: $text-medium;
+    font-family: $font-raleway;
 }
 
-h4 {
-
+.heading-medium {
+    font-size: $text-regular;
+    font-weight: $weight-bold;
+    font-family: $font-raleway;
 }
 
-h5 {
-
+.heading-small {
+    font-size: $text-small;
+    font-weight: $weight-bold;
+    font-family: $font-raleway;
+    text-transform: uppercase;
 }
 
-h6 {
-
+.underline {
+    text-decoration: underline;
 }
 
 p {
@@ -73,9 +72,9 @@ p {
 
 a {
     color: map-get($color, 'blue');
-    text-decoration: none;
+    text-decoration: underline;
 
-    &:hover {
-        border-bottom: 1px dashed map-get($color, 'blue');
-    }
+    // &:hover {
+    //     border-bottom: 1px dashed map-get($color, 'blue');
+    // }
 }

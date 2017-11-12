@@ -1,0 +1,260 @@
+@import '../node_modules/sass-flex-mixin/_flex.scss';
+
+/* Breakpoints */
+$breakpoint-md: 35.5rem;
+$breakpoint-lg: 60rem;
+
+/* Grid Settings */
+$grid-columns-lg: 12 !default; // Large grid has 12 columns
+$grid-columns-md: 8 !default; // Medium grid has 8 columns
+$grid-columns-sm: 4 !default; // Small grid has 4 columns
+
+$flexboxgrid-gutter-width: 1.5rem !default; // Inner gutter width
+$flexboxgrid-outer-margin: 0 !default; // Outer margin width
+$flexboxgrid-max-width: 1280px !default; // Max page width
+
+// Set up compensation for gutter width - used in row margins
+$gutter-compensation: $flexboxgrid-gutter-width * .5 * -1;
+$half-gutter-width: $flexboxgrid-gutter-width * .5;
+
+$breakpoints:
+    md $breakpoint-md $grid-columns-md,
+    lg $breakpoint-lg $grid-columns-lg !default;
+
+@mixin flexboxgrid-sass-col-common {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: $sp-small;
+    padding-left: $half-gutter-width;
+    padding-right: $half-gutter-width;
+  
+    // split @include flex(0, 0, auto) into individual props
+    @include flex-grow(1);
+    @include flex-shrink(0);
+}
+
+.pa-wrapper {
+    margin: 0 $flexboxgrid-gutter-width;
+    max-width: $flexboxgrid-max-width;
+    
+    $gutter-px: rem2px($flexboxgrid-gutter-width*2);
+
+    @media only screen and (min-width: (#{parseInt($flexboxgrid-max-width)} + #{$gutter-px}px)) {
+        margin: 0 auto;
+    }
+}  
+
+.pa-grid {
+    box-sizing: border-box;
+
+    .pa-grid-fill {
+        background: map-get($color, 'brand-green');
+        border-radius: 3px;
+        color: map-get($color, 'white');
+        font-size: 0.875rem;
+        min-height: 1rem;
+        text-align: center;
+
+        &--large {
+            min-height: 5rem;
+        }
+
+        &--light {
+            background-color: map-get($color, 'blue');;
+        }
+    }
+    
+    .pa-row {
+        box-sizing: border-box;
+        margin: 0 $gutter-compensation;
+        @include flexbox();
+        @include flex(0, 1, auto);
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+    
+        &>* {
+            @include flexboxgrid-sass-col-common;    
+        }
+
+    }
+    
+    // Set up small size (default for mobile-first)
+    $name: 'sm';
+    .pa-col--#{$name} {
+        @include flexboxgrid-sass-col-common;
+        @include flex-basis(auto);
+    }
+
+    @for $i from 0 through $grid-columns-sm {
+        .pa-col--#{$name}-#{$i} {
+            max-width: 100% / $grid-columns-sm * $i;
+            @include flexboxgrid-sass-col-common;
+            @include flex-basis(100% / $grid-columns-sm * $i);
+            @if ($i == 0) { display: none; }
+        }
+    }
+
+    @for $i from 0 through $grid-columns-sm {
+        .pa-col--#{$name}-offset-#{$i} {
+            @if $i == 0 {
+                margin-left: 0;
+            } @else {
+                margin-left: 100% / $grid-columns-sm * $i;
+            }
+            @include flexboxgrid-sass-col-common;
+        }
+    }
+
+    .pa-row--#{$name}-around {
+        @include justify-content(space-around);
+    }
+
+    .pa-row--#{$name}-between {
+        @include justify-content(space-between);
+    }
+
+    .pa-col--#{$name} {
+        max-width: 100%;
+        @include flex-grow(1);
+        @include flex-basis(0);
+    }
+
+    .pa-row--#{$name}-start {
+        text-align: left;
+        @include justify-content(flex-start);
+    }
+
+    .pa-row--#{$name}-center {
+        text-align: center;
+        @include justify-content(center);
+    }
+
+    .pa-row--#{$name}-end {
+        text-align: right;
+        @include justify-content(flex-end);
+    }
+
+    .pa-row--#{$name}-top {
+        @include align-items(flex-start);
+    }
+
+    .pa-row--#{$name}-middle {
+        @include align-items(center);
+    }
+
+    .pa-row--#{$name}-bottom {
+        @include align-items(flex-end);
+    }
+
+    .pa-row--#{$name}-first {
+        order: -1;
+    }
+
+    .pa-row--#{$name}-last {
+        order: 1;
+    }
+
+    .pa-report::after {
+        background: lightblue;
+        content: '#{$name}';
+        padding: 10px;
+    }
+
+    // Setup breakpoints
+    @each $bp in $breakpoints {
+        $name: nth($bp, 1);
+        $size: nth($bp, 2);
+        $columns: nth($bp,3);
+        
+        @media only screen and (min-width: $size) {
+
+            .pa-col--#{$name} {
+                @include flexboxgrid-sass-col-common;
+                @include flex-basis(auto);
+            }
+            
+            @for $i from 0 through $columns {
+                .pa-col--#{$name}-#{$i} {
+                    max-width: 100% / $columns * $i;
+                    @include flexboxgrid-sass-col-common;
+                    @include flex-basis(100% / $columns * $i);
+                    @if ($i == 0) { display: none; }
+                }
+            }
+            
+            @for $i from 0 through $columns {
+                .pa-col--#{$name}-offset-#{$i} {
+                    @if $i == 0 {
+                        margin-left: 0;
+                    } @else {
+                        margin-left: 100% / $columns * $i;
+                    }
+                    @include flexboxgrid-sass-col-common;
+                }
+            }
+
+            .pa-row--#{$name}-around {
+                @include justify-content(space-around);
+            }
+            
+            .pa-row--#{$name}-between {
+                @include justify-content(space-between);
+            }
+            
+            .pa-col--#{$name} {
+                max-width: 100%;
+                @include flex-grow(1);
+                @include flex-basis(0);
+            }
+            
+            .pa-row--#{$name}-start {
+                text-align: left;
+                @include justify-content(flex-start);
+            }
+            
+            .pa-row--#{$name}-center {
+                text-align: center;
+                @include justify-content(center);
+            }
+            
+            .pa-row--#{$name}-end {
+                text-align: right;
+                @include justify-content(flex-end);
+            }
+            
+            .pa-row--#{$name}-top {
+                @include align-items(flex-start);
+            }
+            
+            .pa-row--#{$name}-middle {
+                @include align-items(center);
+            }
+            
+            .pa-row--#{$name}-bottom {
+                @include align-items(flex-end);
+            }
+            
+            .pa-row--#{$name}-first {
+                order: -1;
+            }
+            
+            .pa-row--#{$name}-last {
+                order: 1;
+            }
+            
+            .pa-report::after {
+                content: '#{$name}';
+            }                
+            
+        }
+    }
+
+    .pa-row--reverse {
+        @include flex-direction(row-reverse);
+    }
+      
+    .pa-col--reverse {
+        @include flex-direction(column-reverse);
+    }
+    
+}

@@ -13,7 +13,7 @@
             }
         }
 
-        &:hover, &:focus {
+        &:hover {
             &+label {
                 &::after {
                     content: "";
