@@ -1,6 +1,3 @@
-/**
-TODO: AP get clarity on greens 
-**/
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:500,600,700");
 /* Type Scale */
@@ -71,6 +68,9 @@ html {
   font-size: 16px;
   font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
   line-height: 1.5em; }
+
+html, body {
+  margin: 0; }
 
 .pa-fieldset {
   margin-bottom: 2rem;
@@ -243,14 +243,16 @@ hr {
 .pa-wrapper {
   margin: 0 1.5rem;
   max-width: 1280px; }
-  @media only screen and (min-width: parseInt(1280px)rem2px(3rem) px) {
+  @media only screen and (min-width: parseInt(1280px)48px) {
     .pa-wrapper {
       margin: 0 auto; } }
 
 .pa-grid {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+  max-width: 1328px; }
   .pa-grid .pa-grid-fill {
-    background: #008A34;
+    background: #019247;
     border-radius: 3px;
     color: #fff;
     font-size: 0.875rem;
@@ -1570,12 +1572,13 @@ hr {
   margin-bottom: -0.12em; }
 
 .pa-label--valid {
-  color: #029146; }
+  color: #019247; }
 
 .pa-label--error {
   color: #B12A0B; }
 
 .pa-textbox ~ label {
+  background: #fff;
   left: 0;
   margin-left: 10px;
   padding: 0 10px;
@@ -1583,6 +1586,7 @@ hr {
   top: -0.5em; }
 
 .pa-textbox {
+  background: #fff;
   border: 1px solid #595959;
   border-radius: 3px;
   box-sizing: border-box;
@@ -1591,6 +1595,9 @@ hr {
   height: 60px;
   padding: 19px 20px;
   width: 100%; }
+
+.pa-textbox--valid {
+  border-color: #019247; }
 
 .pa-textbox--error {
   border-color: #B12A0B; }
@@ -1622,7 +1629,7 @@ hr {
     position: absolute;
     top: -0.5em; }
   .pa-textarea--valid {
-    border-color: #029146; }
+    border-color: #019247; }
   .pa-textarea--error {
     border-color: #B12A0B; }
   .pa-textarea p .pa-error {
@@ -1645,6 +1652,7 @@ hr {
   margin: 1rem 20px 0; }
 
 .pa-select {
+  background: #fff;
   border: 1px solid #595959;
   border-radius: 3px;
   box-sizing: border-box;
@@ -1655,6 +1663,7 @@ hr {
   position: relative;
   width: 20em; }
   .pa-select ~ label {
+    background: #fff;
     left: 0;
     margin-left: 10px;
     padding: 0 10px;
@@ -1706,8 +1715,6 @@ hr {
     transform: rotate(135deg);
     vertical-align: top;
     width: 1em; }
-  .pa-select:hover::after {
-    color: #f39c12; }
 
 .pa-checkbox {
   margin-bottom: 20px; }
@@ -1721,7 +1728,7 @@ hr {
       content: "";
       opacity: .4; }
     .pa-checkbox input[type="checkbox"]:checked + label {
-      color: #008A34;
+      color: #019247;
       font-weight: 600; }
       .pa-checkbox input[type="checkbox"]:checked + label::before {
         background-color: rgba(0, 138, 52, 0.15); }
@@ -1750,7 +1757,7 @@ hr {
       width: 28px; }
     .pa-checkbox label::after {
       background: transparent;
-      border: 5px solid #008A34;
+      border: 5px solid #019247;
       border-right: none;
       border-top: none;
       height: 6px;
@@ -1772,7 +1779,7 @@ hr {
       content: "";
       opacity: .4; }
     .pa-radiobutton input[type="radio"]:checked + label {
-      color: #008A34;
+      color: #019247;
       font-weight: 600; }
       .pa-radiobutton input[type="radio"]:checked + label::before {
         background-color: rgba(0, 138, 52, 0.15); }
@@ -1800,7 +1807,7 @@ hr {
       top: 0;
       width: 28px; }
     .pa-radiobutton label::after {
-      background: #008A34;
+      background: #019247;
       border-radius: 9px;
       height: 18px;
       left: 6px;
@@ -1827,7 +1834,7 @@ hr {
     padding: 0 30px; }
   .pa-button button {
     cursor: pointer;
-    background-color: #008A34;
+    background-color: #019247;
     border: 0;
     border-radius: 3px;
     color: #fff;

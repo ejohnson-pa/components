@@ -25,10 +25,10 @@
 
     button {
         cursor: pointer;
-        background-color: map-get($color, 'brand-green');;
+        background-color: $color-green;
         border: 0;
         border-radius: 3px;
-        color: map-get($color, 'white');
+        color: $color-white;
         display: block;
         font-size: 1.125rem;
         font-weight: 400;
@@ -58,20 +58,17 @@
         }
 
         button {
-            background-color: map-get($color, 'brick');
+            background-color: $color-brick;
         }
     }
 
     // Text Only Variant
     &--text-only {
         background: transparent;
-        // margin: 0;
-        //padding: 5px 10px 5px;
         button {
             background: transparent;
-            color: map-get($color, 'blue');
+            color: $color-blue;
             font-size: 1rem;
-            // line-height: 1rem;
             padding: 0;
         }
         &:hover {

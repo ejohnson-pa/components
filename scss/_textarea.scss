@@ -1,10 +1,10 @@
 .pa-textarea {
     
-    background: map-get($color, 'white');
-    border: 1px solid map-get($color, 'dark-gray');
+    background: $color-white;
+    border: 1px solid $color-dark-gray;
     border-radius: 3px;
     box-sizing: border-box;
-    color: map-get($color, 'dark-gray');
+    color: $color-dark-gray;
     font-size: 1rem;
     height: auto;
     line-height: 1.5em;
@@ -14,7 +14,7 @@
     width: 100%;
 
     &~label {
-        background: map-get($color, 'white');
+        background: $color-white;
         left: 0;
         margin-left: 10px;
         padding: 0 10px;                    
@@ -23,16 +23,16 @@
     }
     
     &--valid {
-        border-color: map-get($color, 'green'); 
+        border-color: $color-green; 
     }
 
     &--error {
-        border-color: map-get($color, 'brick'); 
+        border-color: $color-brick; 
     }
 
     p {
         .pa-error {
-            color: map-get($color, 'brick'); 
+            color: $color-brick; 
             font-size: 0.75rem;
             line-height: 1.5em;
             margin: 1rem 20px 0;
@@ -50,7 +50,7 @@
 }
 
 .pa-textarea ~ .pa-error {
-    color: map-get($color, 'brick'); 
+    color: $color-brick; 
     font-size: 0.75rem;
     line-height: 1.5em;
     margin: 1rem 20px 0;

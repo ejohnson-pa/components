@@ -1,8 +1,8 @@
 @import '../node_modules/sass-flex-mixin/_flex.scss';
 
 /* Breakpoints */
-$breakpoint-md: 35.5rem;
-$breakpoint-lg: 60rem;
+$breakpoint-md: 35.5rem; // 568px
+$breakpoint-lg: 60rem; // 960px
 
 /* Grid Settings */
 $grid-columns-lg: 12 !default; // Large grid has 12 columns
@@ -46,11 +46,15 @@ $breakpoints:
 
 .pa-grid {
     box-sizing: border-box;
-
+    padding: 0 $sp-normal;
+    @debug type-of(rem2px($flexboxgrid-gutter-width));
+    @debug type-of($flexboxgrid-max-width);
+    max-width: ($flexboxgrid-max-width + (2 * rem2px($flexboxgrid-gutter-width)));
+    
     .pa-grid-fill {
-        background: map-get($color, 'brand-green');
+        background: $color-brand-green;
         border-radius: 3px;
-        color: map-get($color, 'white');
+        color: $color-white;
         font-size: 0.875rem;
         min-height: 1rem;
         text-align: center;
@@ -60,7 +64,7 @@ $breakpoints:
         }
 
         &--light {
-            background-color: map-get($color, 'blue');;
+            background-color: $color-blue;
         }
     }
     

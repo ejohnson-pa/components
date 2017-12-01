@@ -1,13 +1,27 @@
 @import 'color';
 @import 'typography';
 
+$base-size: 16;
 $offscreen: -9999rem;
 
+@function rem2px($size) {
+    $pxSize: parseNumber($size) * $base-size;
+    @return $pxSize;
+}
+
+@function parseNumber($n) {
+	@return $n / ($n * 0 + 1);
+}
+
 html {
-    color: map-get($color, 'dark-gray');
+    color: $color-dark-gray;
     font-size: $typography-base-size;
     font-family: $font-nunito;
     line-height: 1.5em;
+}
+
+html, body {
+    margin: 0;
 }
 
 .pa-fieldset {
@@ -17,7 +31,7 @@ html {
 
 hr {
     border: 0;
-    border-top: 1px solid map-get($color, 'dark-gray');
+    border-top: 1px solid $color-dark-gray;
     margin: 2em 0;
 }
 
@@ -48,7 +62,6 @@ hr {
 @import 'select';
 @import 'checkbox';
 @import 'radiobutton';
-// @import 'newbutton';
 @import 'button';
 @import 'list';
 @import 'notification';

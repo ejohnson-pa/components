@@ -1,5 +1,5 @@
 .pa-label {
-    background-color: map-get($color, 'white');
+    background-color: $color-white;
     display: inline-block;
     font-size: 0.75rem;
     line-height: 1.5em;
@@ -20,9 +20,9 @@
 }
 
 .pa-label--valid {
-    color: map-get($color, 'green');
+    color: $color-green;
 }
 
 .pa-label--error {
-    color: map-get($color, 'brick');
+    color: $color-brick;
 }

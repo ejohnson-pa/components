@@ -1,5 +1,5 @@
 .pa-notification {
-    background-color: map-get($color, 'pale-yellow');   
+    background-color: $color-pale-yellow;   
     height: 60px;
     position: relative;
 
@@ -12,7 +12,7 @@
     }
 
     &--image-overlay {
-        background-color: rgba(map-get($color, 'pale-yellow'), .90);   
+        background-color: rgba($color-pale-yellow, .90);
     }
 
     &__icon {
@@ -40,10 +40,10 @@
     }
 
     &--confirm {
-        background: map-get($color, 'pale-green');
+        background: $color-pale-green;
 
         &--image-overlay {
-            background-color: rgba(map-get($color, 'pale-green'), .90);   
+            background-color: rgba($color-pale-green, .90);   
         }
     
     }

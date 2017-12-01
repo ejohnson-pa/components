@@ -1,17 +1,18 @@
-/**
-TODO: AP get clarity on greens 
-**/
-$color: (
-    'black': #000,
-    'blue': #0192D0,
-    'brand-green': #008A34, 
-    'brick': #B12A0B,
-    'dark-gray': #595959,
-    'green': #029146, /* validation green TODO - Is this different from brand green? */
-    'light-gray': #9B9B9B,
-    'pale-green': #CEEEDF,
-    'pale-yellow': #FEFDBC,
-    'white': #fff,
-    'teal': #226267
-);
+// Brand colors
+$color-brand-teal: #226267;
+$color-brand-green: #019247;
 
+// Interface colors
+$color-green: $color-brand-green;
+$color-blue: #0192D0;
+$color-brick: #B12A0B;
+$color-pale-green: #CEEEDF;
+$color-pale-yellow: #FEFDBC;
+$color-teal: $color-brand-teal;
+
+// Utility colors
+$color-black: #000;
+$color-white: #fff;
+$color-dark-gray: #595959;
+$color-light-gray: #9B9B9B;
+$color-lighter-gray: #f7f7f7;
