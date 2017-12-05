@@ -47,8 +47,6 @@ $breakpoints:
 .pa-grid {
     box-sizing: border-box;
     padding: 0 $sp-normal;
-    @debug type-of(rem2px($flexboxgrid-gutter-width));
-    @debug type-of($flexboxgrid-max-width);
     max-width: ($flexboxgrid-max-width + (2 * rem2px($flexboxgrid-gutter-width)));
     
     .pa-grid-fill {

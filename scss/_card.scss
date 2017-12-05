@@ -1,36 +1,44 @@
 .pa-card {
 
-    width: 280px;
     background: rgba(#9B9B9B, 0.05); 
-    padding: 10px;
+    padding: $sp-tiny;
+    // width: 280px;
     
-    img {
-        box-sizing: border-box;
-        width: 100%;
+    &__image {
+        position: relative;
+        img {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+        }
     }
 
     &__info {
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         color: $color-black;
 
-        & > div {
-            flex: 1;            
-        }
-
         &--price {
-            font-size: $text-xlarge;
+            background: rgba(#4A4A4A, 0.75);
+            bottom: 0;
+            color: $color-white;
+            left: $sp-tiny;
+            font-size: $text-large;
             font-weight: $weight-bold;
-            position: relative;
-            line-height: 1em;
+            position: absolute;
+            padding: $sp-tiny $sp-tiny $sp-tiny/2 $sp-tiny;
         }
     
         &--symbol {
-            vertical-align: top;
+            display: inline-block;
             font-size: $text-medium;
             margin-right: 0.15rem;
+            margin-top: -0.12rem;
+            vertical-align: top;
+        }
+
+        &--number {
+            display: inline-block;
+            vertical-align: top;
         }
 
         &--inner {
@@ -40,25 +48,31 @@
         }
 
         &--timespan {
-            color: $color-light-gray;
+            color: $color-white;
             font-size: $text-regular;
             font-weight: $weight-regular;
-            line-height: 1.5em;
+            line-height: 1.4em;
             vertical-align: top;
         }
 
         &--location {
-            font-size: $text-medium;
+            color: $color-black;
+            font-size: $text-regular;
             font-weight: $weight-bold;
-            text-align: right;
+            margin: $sp-tiny 0;
+            text-align: left;
         }
-    }
 
-    &__description {
-        font-size: $text-small;
-        line-height: 1.25rem;
-        margin: 10px 0 10px;
-        
-        padding: 0 6px;
+        &--description {
+            color: $color-black;
+            font-size: $text-regular;
+            line-height: 1.25rem;
+            margin: $sp-tiny 0 0;
+
+            i {
+                font-style: normal;
+                color: $color-light-gray;
+            }
+        }
     }
 }

@@ -5,7 +5,7 @@
     border-radius: 3px;
     display: inline-block;
     margin: 0;
-    padding: 10px;
+    padding: $sp-tiny;
     transition: all 0.2s ease-out;
         -webkit-transition: all 0.2s ease-out;
         -moz-transition: all 0.2s ease-out;
@@ -17,9 +17,9 @@
 
     &:active {
         button {
-            line-height: 40px;
-            margin: 10px;
-            padding: 0 30px;
+            line-height: 44px;
+            margin: $sp-tiny;
+            padding: 0 $sp-semi;
         }
     }
 
@@ -127,7 +127,7 @@
     &--stack-vertical {
         .pa-button {
             display: table;
-            margin-bottom: 20px;
+            margin-bottom: $sp-normal;
         }
     }
 
@@ -138,7 +138,7 @@
             }
             &:active {
                 button {
-                    min-width: 100px;
+                    min-width: 104px;
                 }
             }
         }
@@ -151,7 +151,7 @@
             }
             &:active {
                 button {
-                    min-width: 140px;
+                    min-width: 144px;
                 }
             }
         }
@@ -164,7 +164,7 @@
             }
             &:active {
                 button {
-                    min-width: 180px;
+                    min-width: 184px;
                 }
             }
         }
@@ -177,7 +177,7 @@
             }
             &:active {
                 button {
-                    min-width: 220px;
+                    min-width: 224px;
                 }
             }
         }
@@ -190,7 +190,7 @@
             }
             &:active {
                 button {
-                    min-width: 260px;
+                    min-width: 264px;
                 }
             }
         }
@@ -203,7 +203,7 @@
             }
             &:active {
                 button {
-                    min-width: 320px;
+                    min-width: 324px;
                 }
             }
         }
