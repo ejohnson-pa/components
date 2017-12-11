@@ -24,7 +24,7 @@ $breakpoints:
 @mixin flexboxgrid-sass-col-common {
     box-sizing: border-box;
     display: block;
-    margin-bottom: $sp-small;
+    // margin-bottom: $sp-small;
     padding-left: $half-gutter-width;
     padding-right: $half-gutter-width;
   
@@ -42,19 +42,27 @@ $breakpoints:
     @media only screen and (min-width: (#{parseInt($flexboxgrid-max-width)} + #{$gutter-px}px)) {
         margin: 0 auto;
     }
-}  
+}   
 
 .pa-grid {
     box-sizing: border-box;
     padding: 0 $sp-normal;
     max-width: ($flexboxgrid-max-width + (2 * rem2px($flexboxgrid-gutter-width)));
+    margin: 0 auto;
     
+    &--full-width {
+        max-width: none;
+        @include resetSpacing();
+
+    }
+
     .pa-grid-fill {
-        background: $color-brand-green;
+        background: $color-green;
         border-radius: 3px;
         color: $color-white;
         font-size: 0.875rem;
         min-height: 1rem;
+        height: 100%;
         text-align: center;
 
         &--large {
@@ -64,6 +72,10 @@ $breakpoints:
         &--light {
             background-color: $color-blue;
         }
+
+        &--overlay {
+            background: rgba($color-lighter-gray, 0.5);
+        }        
     }
     
     .pa-row {
@@ -78,6 +90,14 @@ $breakpoints:
             @include flexboxgrid-sass-col-common;    
         }
 
+    }
+
+    &--example {
+        .pa-row {
+            & > * {
+                padding-bottom: $sp-small;        
+            }
+        }
     }
     
     // Set up small size (default for mobile-first)
@@ -258,5 +278,4 @@ $breakpoints:
     .pa-col--reverse {
         @include flex-direction(column-reverse);
     }
-    
 }

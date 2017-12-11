@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass scss/app.scss css/app.css --output-style compressed",
-    "watch": "node-sass -w scss/ -o css/",
+    "sass:core": "node-sass scss/pa-core.scss css/pa-core.min.css --output-style compressed",
+    "sass:app": "node-sass scss/app.scss css/app.min.css --output-style compressed",
+    "sass": "npm run sass:core && npm run sass:app",
+    "watch:core": "node-sass -w scss/pa-core.scss css/pa-core.css",
+    "watch:app": "node-sass -w scss/app.scss css/app.css",
+    "build": "node-sass scss -o css --source-maps",
     "deploy": "gh-pages -d ./ -b gh-pages"
   },
   "repository": {

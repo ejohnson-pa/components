@@ -1,0 +1,9 @@
+.pa-rule {
+    border: 0;
+
+    &--horizontal {
+        border-top: 1px solid $color-dark-gray;
+        margin: 2em 0;
+    }
+}
+
